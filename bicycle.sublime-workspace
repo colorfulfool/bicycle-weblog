@@ -1,0 +1,2280 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"De",
+				"DetailView	class"
+			],
+			[
+				"si",
+				"sites	module"
+			],
+			[
+				"con",
+				"contrib	module"
+			],
+			[
+				"s",
+				"simple_tag	function"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"Pos",
+				"PostAdmin	class"
+			],
+			[
+				"aut",
+				"auto_now_add	param"
+			],
+			[
+				"Date",
+				"DateTimeField	class"
+			],
+			[
+				"At",
+				"AttributeError	class"
+			],
+			[
+				"res",
+				"response_object	statement"
+			],
+			[
+				"mess",
+				"message"
+			],
+			[
+				"err",
+				"error_message"
+			],
+			[
+				"Zr",
+				"ZeroBalanceErrorMixin	class"
+			],
+			[
+				"Guit",
+				"GuitarCenter	class"
+			],
+			[
+				"Barc",
+				"BarcodeLastDigitsMixin	class"
+			],
+			[
+				"firs",
+				"first_digits"
+			],
+			[
+				"Buca",
+				"BucadiBebbo	class"
+			],
+			[
+				"hid",
+				"hidden_inputs	statement"
+			],
+			[
+				"pos",
+				"post_url	statement"
+			],
+			[
+				"post_",
+				"post_url"
+			],
+			[
+				"data",
+				"data_string	param"
+			],
+			[
+				"ven",
+				"vendor_name"
+			],
+			[
+				"get_by",
+				"get_by_vendor	function"
+			],
+			[
+				"save",
+				"save_captcha_image	function"
+			],
+			[
+				"sub",
+				"submit_button_css"
+			],
+			[
+				"cli",
+				"click_element	function"
+			],
+			[
+				"Im",
+				"ImportError	class"
+			],
+			[
+				"Deduc",
+				"DeduceNumberMixin	class"
+			],
+			[
+				"Ke",
+				"KeyError	class"
+			],
+			[
+				"Und",
+				"UnderArmor	class"
+			],
+			[
+				"Bala",
+				"BalancePostCard	class"
+			],
+			[
+				"csv",
+				"csv_reader	statement"
+			],
+			[
+				"str",
+				"strip	function"
+			],
+			[
+				"form_",
+				"form_url"
+			],
+			[
+				"Cap",
+				"CaptchaMixin	class"
+			],
+			[
+				"Pin",
+				"PinMixin	class"
+			],
+			[
+				"inl",
+				"inline_number"
+			],
+			[
+				"form",
+				"form_name"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"fomr",
+				"form_name"
+			],
+			[
+				"mana",
+				"manage_all_forms"
+			],
+			[
+				"mas",
+				"master_inputs"
+			],
+			[
+				"Htt",
+				"HttpResponse	class"
+			],
+			[
+				"ret",
+				"ret_code	statement"
+			],
+			[
+				"sear",
+				"search_in_queryset	function"
+			],
+			[
+				"show",
+				"show_on_map"
+			],
+			[
+				"sta",
+				"staff_member_required	function"
+			],
+			[
+				"new",
+				"new_parent	statement"
+			],
+			[
+				"mov",
+				"moved_node"
+			],
+			[
+				"node",
+				"nodes_list	statement"
+			],
+			[
+				"js",
+				"json_object	statement"
+			],
+			[
+				"re",
+				"remove	function"
+			],
+			[
+				"chi",
+				"children"
+			],
+			[
+				"rend",
+				"render_tree_json	function"
+			],
+			[
+				"for",
+				"form_model"
+			],
+			[
+				"lis",
+				"list_display	statement"
+			],
+			[
+				"is",
+				"isinstance	function"
+			],
+			[
+				"fie",
+				"field_name"
+			],
+			[
+				"Man",
+				"ManyToMany	class"
+			],
+			[
+				"prop",
+				"property	class"
+			],
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"Num",
+				"NumericFieldMixin	class"
+			],
+			[
+				"Dat",
+				"DatepickerWidget	class"
+			],
+			[
+				"Text",
+				"TextWidget"
+			],
+			[
+				"Da",
+				"DateField	class"
+			],
+			[
+				"Sele",
+				"SelectDateWidget	class"
+			],
+			[
+				"Over",
+				"OverwriteConfig	class"
+			],
+			[
+				"relo",
+				"reloadTreeAndSelect"
+			],
+			[
+				"sho",
+				"showNodeProperties"
+			],
+			[
+				"set",
+				"setattr	function"
+			],
+			[
+				"node_",
+				"node_id"
+			],
+			[
+				"pae",
+				"parent_form	function"
+			],
+			[
+				"get",
+				"get_field_class	function"
+			],
+			[
+				"pop",
+				"pop"
+			],
+			[
+				"no",
+				"node_id"
+			],
+			[
+				"sh",
+				"showNodeProperties"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"_in",
+				"_inlines_container	statement"
+			],
+			[
+				"pare",
+				"parent_node	statement"
+			],
+			[
+				"nod",
+				"node_type	statement"
+			],
+			[
+				"ud",
+				"updateNode"
+			],
+			[
+				"sa",
+				"save_to_config	function"
+			],
+			[
+				"Not",
+				"NotImplementedError	class"
+			],
+			[
+				"htt",
+				"HttpResponse	class"
+			],
+			[
+				"sli",
+				"slideDown"
+			],
+			[
+				"pro",
+				"propertyExplorerSubmit"
+			],
+			[
+				"dum",
+				"dump	function"
+			],
+			[
+				"ren",
+				"render_data	function"
+			],
+			[
+				"Choi",
+				"ChoicesMixin	class"
+			],
+			[
+				"roo",
+				"root_dump	statement"
+			],
+			[
+				"rand",
+				"random	statement"
+			],
+			[
+				"col",
+				"columnNames	function"
+			],
+			[
+				"St",
+				"StopIteration	class"
+			],
+			[
+				"proper",
+				"property	class"
+			],
+			[
+				"tr",
+				"tree"
+			],
+			[
+				"tre",
+				"treeWidget"
+			],
+			[
+				"conf",
+				"config_file	statement"
+			],
+			[
+				"lo",
+				"load	function"
+			],
+			[
+				"root",
+				"root_dump_file	statement"
+			],
+			[
+				"try",
+				"try	Try/Except"
+			],
+			[
+				"gene",
+				"generate_name	function"
+			],
+			[
+				"li",
+				"list	class"
+			],
+			[
+				"he",
+				"help_text"
+			],
+			[
+				"Fi",
+				"File	class"
+			],
+			[
+				"ch",
+				"choices"
+			],
+			[
+				"dja",
+				"django_args	statement"
+			],
+			[
+				"clas",
+				"class_name"
+			],
+			[
+				"Cho",
+				"ChoicesMixin	class"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"Nu",
+				"NullValueMixin	class"
+			],
+			[
+				"load",
+				"load_field	function"
+			],
+			[
+				"Fie",
+				"FieldClass	statement"
+			],
+			[
+				"glo",
+				"globals	function"
+			],
+			[
+				"No",
+				"None	keyword"
+			],
+			[
+				"co",
+				"config_to_models	function"
+			],
+			[
+				"fiel",
+				"field_object	forflow"
+			],
+			[
+				"key",
+				"KeyError	class"
+			],
+			[
+				"Hidd",
+				"HiddenFieldsMixin	class"
+			],
+			[
+				"loca",
+				"location_field"
+			],
+			[
+				"Aut",
+				"AutoCurrentCoordinatesMixin"
+			],
+			[
+				"man",
+				"manytomany_fields"
+			],
+			[
+				"Mu",
+				"MultipleChoiceWidget	class"
+			],
+			[
+				"Mul",
+				"MultipleChoiceField	class"
+			],
+			[
+				"mod",
+				"ModelForm	class"
+			],
+			[
+				"sea",
+				"search_redirect	function"
+			],
+			[
+				"HttpR",
+				"HttpResponseRedirect	class"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "blog/urls.py",
+			"settings":
+			{
+				"buffer_size": 361,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/blog/post_list.html",
+			"settings":
+			{
+				"buffer_size": 126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog/models.py",
+			"settings":
+			{
+				"buffer_size": 792,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog/admin.py",
+			"settings":
+			{
+				"buffer_size": 253,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/blog/post_list_page.html",
+			"settings":
+			{
+				"buffer_size": 425,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/blog/base.html",
+			"settings":
+			{
+				"buffer_size": 258,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog/static/base.css",
+			"settings":
+			{
+				"buffer_size": 162,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 327.0,
+		"selected_items":
+		[
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"synba",
+				"Set Syntax: Batch File"
+			],
+			[
+				"view",
+				"File: New View into File"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"new",
+				"File: New View into File"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"tit",
+				"Convert Case: Title Case"
+			],
+			[
+				"vie",
+				"File: New View into File"
+			],
+			[
+				"serve",
+				"SFTP: Browse Server…"
+			],
+			[
+				"ser",
+				"SFTP: Browse Server…"
+			],
+			[
+				"che",
+				"Git: Checkout"
+			],
+			[
+				"mer",
+				"Git: Merge"
+			],
+			[
+				"chck",
+				"Git: Checkout"
+			],
+			[
+				"con",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"ch",
+				"Git: Checkout New Branch"
+			],
+			[
+				"brrem",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"remt",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"remot",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"server",
+				"SFTP: Setup Server…"
+			],
+			[
+				"sftp",
+				"SFTP: Edit Server…"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"git pu",
+				"Git: Pull"
+			],
+			[
+				"pul",
+				"Git: Pull"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"st",
+				"Git: Status"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ta",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"conta",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"vi",
+				"File: New View into File"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/colorfulfool/Projects/bicycle/bicycle",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/static",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templatetags",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/templates",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/templates/blog"
+	],
+	"file_history":
+	[
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/settings.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/static/base.css",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templatetags/custom_tags.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/requirements.txt",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/templates/blog/base.html",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/templates/blog/post_detail.html",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle.sublime-project",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/urls.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templatetags/__init__.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/models.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/admin.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/urls.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templates/post_list.html",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/local_settings.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/.env",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/.gitignore",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/__init__.py",
+		"/Users/colorfulfool/Projects/bicycle/requirements.txt",
+		"/Users/colorfulfool/Projects/bicycle/Procfile",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/.gitignore",
+		"/Users/colorfulfool/Projects/bicycle/venv/lib/python2.7/encodings/string_escape.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/settings.py",
+		"/Users/colorfulfool/Projects/giftcard-web-service/make.sh",
+		"/Users/colorfulfool/Projects/giftcard-web-service/cards/Cards data.csv",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/cards/test_cards.py",
+		"/Users/colorfulfool/.Trash/Squarespace-Wordpress-Export-10-06-2014.xml",
+		"/Users/colorfulfool/Downloads/Squarespace-Wordpress-Export-10-06-2014.xml",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/build/main/out00-Analysis.toc",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/cards/Cards data.csv",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/cards_supported.txt",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/make.sh",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/cards/__init__.py",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/device_input.py",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/cards/conftest.py",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/main.py",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/cards/cards.py",
+		"/Users/colorfulfool/Projects/giftcard-web-service/dist/app/Microsoft.VC90.CRT.manifest",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/cards/extra.py",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/main.spec",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/cards/mixins.py",
+		"/Users/colorfulfool/Projects/spin-html/dist/example_project/project.cfg",
+		"/Users/colorfulfool/Projects/spin-html/dist/example_project/Town County List.csv",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/curl-test.sh",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/.idea/misc.xml",
+		"/Users/colorfulfool/Projects/giftcard-balance-checker/.idea/modules.xml",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/misc/__init__.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/misc/forms.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config.json",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/README",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/misc/fields.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/requirements.txt",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/templates/web/base.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/jquery.formset.min.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/templates/web/form_update.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/templates/web/visibility_dependencies_tag.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config-generated-forms.sublime-project",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/models.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/urls.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/templates/web/form_create.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/templatetags/custom_tags.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/api/views.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/css/demo.css",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0013_auto__del_level1_agroecology.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0006_auto__del_new_member__del_buy_seeddings__del_order__del_transaction__a.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0005_auto__del_buy_seedlings__add_buy_seeddings__add_field_transaction_Test.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0022_auto__add_emptyform__chg_field_member_registration_First_Name__chg_fie.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/ckeditor/samples/inlineall.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/ion-slider/ion.rangeSlider.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/.idea/encodings.xml",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/ckeditor/skins/moono/editor.css",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/ckeditor/skins/moono/editor_ie.css",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/templates/admin/index.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/views.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/templates/web/form_list.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/templates/config_editor/complete_page.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/kandu/settings.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/apply_config.sh",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/admin.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/templates/web/search_form_tag.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/utils.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/autocomplete_light/autocomplete/generic.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/widgets.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/misc/mixins.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0011_auto__del_sales__del_produce_sale__del_compost_order__del_level2_agroe.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0015_auto__chg_field_subsubord_Whatever.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0002_auto__add_baseformmodel.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0007_auto__add_tesing.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/api/urls.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/Procfile",
+		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/autocomplete_light/autocomplete/__init__.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/autocomplete_light/autocomplete/base.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/views.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/icons/views.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/ckeditor/plugins/scayt/dialogs/options.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/datatables/ZeroClipboard.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/kandu/urls.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/urls.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/misc/functions.py",
+		"/Users/colorfulfool/Downloads/simple_plot.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/static/js/cycle.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/api/serializers.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/rest_framework/serializers.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/rest_framework/relations.py",
+		"/Users/colorfulfool/Desktop/63cdc8893d3ddbbdb021/kau2.cpp",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/static/js/underscore.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/django/forms/widgets.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/kandu/local_settings.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/utils.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/static/js/tree.jquery.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config.pickle",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/static/js/jquery-2.0.2.min.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0010_auto__add_subord.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0001_initial.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/static/css/jqtree.css",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/selectToUISlider/selectToUISlider.jQuery.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/temp.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/django/views/generic/base.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/settings.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/ckeditor/samples/tabindex.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/bootstrap-tags/bootstrap-tagsinput-angular.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/templates/web/config_form.html",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/admin.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/misc/models.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/morris/morris.js",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/icons/models.py",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/.idea/modules.xml",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/.idea/misc.xml",
+		"/Users/colorfulfool/Projects/config-generated-forms/repo/api/fields.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"en",
+			"==",
+			"buckle",
+			"http://www.guitarcente",
+			"!=",
+			"-19",
+			"mail",
+			"lowe",
+			"webkitbr",
+			"base64.b64encode",
+			"osx2orcldLSn1Y2LR6JgVWPSR7QFWs",
+			"json",
+			"pin",
+			"editable\": true",
+			"edit",
+			"function",
+			"manage_input",
+			"manage_form",
+			"manage_visibility",
+			"manage_form",
+			"each",
+			"master_inputs",
+			"visi",
+			"form_master_inputs",
+			"master_inputs",
+			"manage_all_forms",
+			"addCssCl",
+			"addCssClass",
+			"deleteCss",
+			"deleteCssClass",
+			"deleteText",
+			"remove",
+			"insert",
+			"False",
+			"[ ]",
+			"for_user",
+			"get_search_fields",
+			"show_",
+			"edita",
+			"fields_for_label",
+			"TreeMixin",
+			"target.parent()",
+			"positiion",
+			"from_list",
+			"nodes_list",
+			"parent",
+			"json_object",
+			"fuck",
+			"autocu",
+			"relatedfield",
+			"updated",
+			"field_name",
+			"to_many",
+			"field_mapping",
+			"manyto",
+			"if not django_args['default']",
+			"data.node_id",
+			"get_kind",
+			"data",
+			"self._parent",
+			"_conditions_container",
+			"_condition_container",
+			"ParamsMixin",
+			"paramsmixi",
+			"self",
+			"field_object",
+			"json.loads(self.request.body)",
+			"startswith",
+			"subord",
+			"node_type",
+			"node",
+			"pop(node)",
+			"btn",
+			"button",
+			"bootstrap_button",
+			"selector for your message",
+			"selec",
+			"backbone-forms/distribution",
+			"propertyExplorerForm",
+			"dispatch",
+			"respponse",
+			"paramsWidget",
+			"TreeMixin",
+			"Resource",
+			"load_root",
+			"QtMixin",
+			"config_update_wrapper",
+			"col-xs-12",
+			"field",
+			"field_object",
+			"):\n",
+			"\n	",
+			"ToMixin",
+			"ForeignKey",
+			"hidde",
+			"AutocampleteForm",
+			"showPosition",
+			"pointfi",
+			"attributeerror",
+			"autocomplete_f",
+			"subo",
+			"generate_name(extra_args.pop('to', '')",
+			"strip",
+			"form_class",
+			"'",
+			"form",
+			"model",
+			"__init__",
+			"search_in_queryset",
+			"_choices_for_request_conditions",
+			"ice",
+			"foreig",
+			"primary",
+			"Exception",
+			"models_old_str",
+			"regis",
+			"Co-op Registration",
+			"registra",
+			"BalancePostCard",
+			"BalancePostMixin",
+			"str",
+			"request",
+			"100",
+			"div",
+			"form_group",
+			"ProfileUpdate.as_view()",
+			"form, in",
+			" form, instance, *args, **kwargs"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"remove(node)",
+			"TreeMixin",
+			"BalancePostCard",
+			"CEffectVignette",
+			"first_digits"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "blog/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								359,
+								359
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/blog/post_list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								126
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "blog/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								325,
+								333
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "blog/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								186
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/blog/post_list_page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								371,
+								371
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/blog/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 258,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								168,
+								168
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "blog/static/base.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								162,
+								162
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.anaconda_documentation":
+	{
+		"height": 112.0
+	},
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-checkout":
+	{
+		"height": 112.0
+	},
+	"output.git-commit":
+	{
+		"height": 100.0
+	},
+	"output.git-merge":
+	{
+		"height": 112.0
+	},
+	"output.git-pull":
+	{
+		"height": 112.0
+	},
+	"output.git-push":
+	{
+		"height": 112.0
+	},
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"project": "bicycle.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"css",
+				"blog/static/base.css"
+			],
+			[
+				"cs",
+				"blog/static/base.css"
+			],
+			[
+				"ba",
+				"blog/static/base.css"
+			],
+			[
+				"req",
+				"requirements.txt"
+			],
+			[
+				"set",
+				"bicycle/settings.py"
+			],
+			[
+				"se",
+				"bicycle/settings.py"
+			],
+			[
+				"",
+				"templates/blog/base.html"
+			],
+			[
+				"ad",
+				"blog/admin.py"
+			],
+			[
+				"loc",
+				"bicycle/local_settings.py"
+			],
+			[
+				"ign",
+				"bicycle/.gitignore"
+			],
+			[
+				"ur",
+				"bicycle/urls.py"
+			],
+			[
+				"en",
+				".env"
+			],
+			[
+				"ws",
+				"bicycle/wsgi.py"
+			],
+			[
+				"mi",
+				"cards/mixins.py"
+			],
+			[
+				"car",
+				"cards/cards.py"
+			],
+			[
+				"mix",
+				"cards/mixins.py"
+			],
+			[
+				"init",
+				"cards/__init__.py"
+			],
+			[
+				"test",
+				"cards/test_cards.py"
+			],
+			[
+				"mai",
+				"main.py"
+			],
+			[
+				"ma",
+				"make.sh"
+			],
+			[
+				"cards",
+				"cards/Cards data.csv"
+			],
+			[
+				"pro",
+				"dist/example_project/project.cfg"
+			],
+			[
+				"cur",
+				"curl-test.sh"
+			],
+			[
+				"re",
+				"README"
+			],
+			[
+				"red",
+				"README"
+			],
+			[
+				"conf",
+				"config.json"
+			],
+			[
+				"mode",
+				"forms/models.py"
+			],
+			[
+				"upd",
+				"templates/web/form_update.html"
+			],
+			[
+				"cre",
+				"templates/web/form_create.html"
+			],
+			[
+				"visi",
+				"templates/web/visibility_dependencies_tag.html"
+			],
+			[
+				"base",
+				"templates/web/base.html"
+			],
+			[
+				"upda",
+				"templates/web/form_update.html"
+			],
+			[
+				"mod",
+				"forms/models.py"
+			],
+			[
+				"lis",
+				"templates/web/form_list.html"
+			],
+			[
+				"com",
+				"templates/config_editor/complete_page.html"
+			],
+			[
+				"app",
+				"apply_config.sh"
+			],
+			[
+				"sear",
+				"templates/web/search_form_tag.html"
+			],
+			[
+				"page",
+				"templates/config_editor/complete_page.html"
+			],
+			[
+				"vie",
+				"api/views.py"
+			],
+			[
+				"c",
+				"config.json"
+			],
+			[
+				"co",
+				"config.json"
+			],
+			[
+				"url",
+				"api/urls.py"
+			],
+			[
+				"vi",
+				"api/views.py"
+			],
+			[
+				"pag",
+				"templates/config_editor/complete_page.html"
+			],
+			[
+				"comple",
+				"templates/config_editor/complete_page.html"
+			],
+			[
+				"fun",
+				"forms/misc/functions.py"
+			],
+			[
+				"fie",
+				"forms/misc/fields.py"
+			],
+			[
+				"con",
+				"config.json"
+			],
+			[
+				"sett",
+				"kandu/settings.py"
+			],
+			[
+				"for",
+				"forms/misc/forms.py"
+			],
+			[
+				"bas",
+				"templates/web/base.html"
+			],
+			[
+				"001",
+				"forms/migrations/0010_auto__add_subord.py"
+			],
+			[
+				"forms",
+				"forms/misc/forms.py"
+			],
+			[
+				"jq",
+				"config_editor/static/css/jqtree.css"
+			],
+			[
+				"jqtr",
+				"config_editor/static/css/jqtree.css"
+			],
+			[
+				"ut",
+				"config_editor/utils.py"
+			],
+			[
+				"uti",
+				"config_editor/utils.py"
+			],
+			[
+				"utils",
+				"config_editor/utils.py"
+			],
+			[
+				"li",
+				"templates/web/form_list.html"
+			],
+			[
+				"mo",
+				"forms/models.py"
+			],
+			[
+				"models",
+				"forms/misc/models.py"
+			],
+			[
+				"ini",
+				"forms/misc/__init__.py"
+			],
+			[
+				"in",
+				"forms/misc/__init__.py"
+			],
+			[
+				"mis",
+				"forms/misc.py"
+			],
+			[
+				"confi",
+				"config.json"
+			],
+			[
+				"wid",
+				"web/widgets.py"
+			],
+			[
+				"cus",
+				"web/templatetags/custom_tags.py"
+			],
+			[
+				"view",
+				"web/views.py"
+			],
+			[
+				"fo",
+				"templates/web/form_create.html"
+			],
+			[
+				"m",
+				"forms/models.py"
+			],
+			[
+				"tes",
+				"tests.py"
+			],
+			[
+				"t",
+				"tests.py"
+			],
+			[
+				"r",
+				"requirements.txt"
+			],
+			[
+				"js",
+				"web/templates/profile_form_js.html"
+			],
+			[
+				"reg",
+				"web/templates/vote_register.html"
+			],
+			[
+				"b",
+				"web/templates/base.html"
+			],
+			[
+				"ho",
+				"web/templates/public_home.html"
+			],
+			[
+				"pr",
+				"Procfile"
+			],
+			[
+				"ca",
+				"cards_supported.txt"
+			],
+			[
+				"env",
+				".env"
+			],
+			[
+				"ev",
+				"web/views.py"
+			],
+			[
+				"spe",
+				"main.spec"
+			],
+			[
+				"ex",
+				"extra.py"
+			],
+			[
+				"te",
+				"tests.py"
+			],
+			[
+				"mixi",
+				"mixins.py"
+			],
+			[
+				"pre",
+				"vedit2/preview_dlg.cpp"
+			],
+			[
+				"veditcpp",
+				"vedit2/vedit2_dlg.cpp"
+			],
+			[
+				"misc",
+				"forms/misc.py"
+			],
+			[
+				"he",
+				"effect_test/helper_functions.cpp"
+			],
+			[
+				"hel",
+				"effect_test/helper_functions.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"adm",
+				"PostAdmin"
+			],
+			[
+				"pos",
+				"Post"
+			],
+			[
+				"buck",
+				"Buckle"
+			],
+			[
+				"mags",
+				"number_from_magstripe"
+			],
+			[
+				"usu",
+				"strategy_usual"
+			],
+			[
+				"guit",
+				"GuitarCenter"
+			],
+			[
+				"catc",
+				"catch_known_errors"
+			],
+			[
+				"tic",
+				"TicketMaster"
+			],
+			[
+				"acq",
+				"acquire_balance_response"
+			],
+			[
+				"hobby",
+				"HobbyLobby"
+			],
+			[
+				"stat",
+				"StaticErrorMessageMixin"
+			],
+			[
+				"num",
+				"number_from_barcode"
+			],
+			[
+				"posas",
+				"PostAsJsonMixin"
+			],
+			[
+				"barc",
+				"BarcodeMixin"
+			],
+			[
+				"aja",
+				"WebkitAjaxMixin"
+			],
+			[
+				"tick",
+				"TicketMaster"
+			],
+			[
+				"ac",
+				"acquire_balance_response"
+			],
+			[
+				"getin",
+				"GetInsteadOfPostMixin"
+			],
+			[
+				"acqu",
+				"acquire_balance_response"
+			],
+			[
+				"she",
+				"ShellGas"
+			],
+			[
+				"pottr",
+				"PotteryBarn"
+			],
+			[
+				"zum",
+				"Zumiez"
+			],
+			[
+				"foot",
+				"FootLocker"
+			],
+			[
+				"base",
+				"BaseCard"
+			],
+			[
+				"bala",
+				"BalancePostCard"
+			],
+			[
+				"ded",
+				"DeduceNumberMixin"
+			],
+			[
+				"red",
+				"RedLobster"
+			],
+			[
+				"mag",
+				"get_by_magstripe"
+			],
+			[
+				"parts",
+				"strategy_parts"
+			],
+			[
+				"merch",
+				"LowesMerchandiseCard"
+			],
+			[
+				"imag",
+				"ImageQt"
+			],
+			[
+				"get_ca",
+				"get_captcha"
+			],
+			[
+				"tot",
+				"TotalWine"
+			],
+			[
+				"merc",
+				"LowesMerchandiseCard"
+			],
+			[
+				"lwoe",
+				"LowesMerchandiseCard"
+			],
+			[
+				"capt",
+				"WebkitCaptchaMixin"
+			],
+			[
+				"inter",
+				"InternalError"
+			],
+			[
+				"lowe",
+				"LowesMerchandiseCard"
+			],
+			[
+				"web",
+				"WebkitBrowserMixin"
+			],
+			[
+				"proc",
+				"process_balance_response"
+			],
+			[
+				"kwa",
+				"get_post_kwargs"
+			],
+			[
+				"outb",
+				"OutbackSteakHouse"
+			],
+			[
+				"form",
+				"Form"
+			],
+			[
+				"fore",
+				"ForeignKey"
+			],
+			[
+				"visibil",
+				"visibility_dependencies_js"
+			],
+			[
+				"defastr",
+				"DefaultStringMixin"
+			],
+			[
+				"scri",
+				"execute_script"
+			],
+			[
+				"searin",
+				"search_in_queryset"
+			],
+			[
+				"choices",
+				"choices_for_request"
+			],
+			[
+				"sear",
+				"FormSearch"
+			],
+			[
+				"searre",
+				"search_redirect"
+			],
+			[
+				"sarch",
+				"search_form"
+			],
+			[
+				"AUTOCOM",
+				"SearchAutocomplete"
+			],
+			[
+				"read",
+				"ReadOnlyAndInlinesMixin"
+			],
+			[
+				"sche",
+				"render_schema"
+			],
+			[
+				"rend",
+				"render_json"
+			],
+			[
+				"root",
+				"RootContainer"
+			],
+			[
+				"basef",
+				"BaseFormModel"
+			],
+			[
+				"for",
+				"Form"
+			],
+			[
+				"fie",
+				"Field"
+			],
+			[
+				"load",
+				"load_form"
+			],
+			[
+				"_to_",
+				"config_to_models"
+			],
+			[
+				"inse",
+				"insertChild"
+			],
+			[
+				"move",
+				"moveChild"
+			],
+			[
+				"tre",
+				"TreeMixin"
+			],
+			[
+				"moveC",
+				"moveChild"
+			],
+			[
+				"inlin",
+				"InlinesContainer"
+			],
+			[
+				"node_k",
+				"node_kind"
+			],
+			[
+				"tree",
+				"TreeMixin"
+			],
+			[
+				"many",
+				"ManyToMany"
+			],
+			[
+				"man",
+				"ManyToMany"
+			],
+			[
+				"dja",
+				"DjangoRenderMixin"
+			],
+			[
+				"prima",
+				"PrimaryKeyRelatedField"
+			],
+			[
+				"deci",
+				"Decimal"
+			],
+			[
+				"date",
+				"Date"
+			],
+			[
+				"get_js",
+				"get_json_params"
+			],
+			[
+				"render_tr",
+				"render_tree_json"
+			],
+			[
+				"fiel",
+				"Field"
+			],
+			[
+				"node",
+				"Node"
+			],
+			[
+				"toM",
+				"ToMixin"
+			],
+			[
+				"cond",
+				"Condition"
+			],
+			[
+				"render",
+				"render_json"
+			],
+			[
+				"pop",
+				"populate_params"
+			],
+			[
+				"PARAMS",
+				"ParamsMixin"
+			],
+			[
+				"PARAM",
+				"populate_params"
+			],
+			[
+				"baSE",
+				"Base"
+			],
+			[
+				"cho",
+				"ChoicesMixin"
+			],
+			[
+				"params",
+				"ParamsMixin"
+			],
+			[
+				"change_f",
+				"change_field_type"
+			],
+			[
+				"null",
+				"NullValueMixin"
+			],
+			[
+				"get_dja",
+				"get_django_args"
+			],
+			[
+				"coor",
+				"Coordinates"
+			],
+			[
+				"tom",
+				"ToMixin"
+			],
+			[
+				"foreig",
+				"ForeignKey"
+			],
+			[
+				"inser",
+				"insertChild"
+			],
+			[
+				"removeChi",
+				"removeChildren"
+			],
+			[
+				"remveC",
+				"removeChildren"
+			],
+			[
+				"remove",
+				"removeChildren"
+			],
+			[
+				"remo",
+				"removeChildren"
+			],
+			[
+				"rem",
+				"removeChildren"
+			],
+			[
+				"removeC",
+				"removeChildren"
+			],
+			[
+				"insert",
+				"insertChild"
+			],
+			[
+				"addCh",
+				"addChild"
+			],
+			[
+				"insertC",
+				"insertChild"
+			],
+			[
+				"mana",
+				"ManageConfig"
+			],
+			[
+				"manage",
+				"ManageConfig"
+			],
+			[
+				"config_u",
+				"config_update_wrapper"
+			],
+			[
+				"con",
+				"Condition"
+			],
+			[
+				"param",
+				"populate_params"
+			],
+			[
+				"get_ava",
+				"get_available_fields"
+			],
+			[
+				"choi",
+				"Choice"
+			],
+			[
+				"rendsc",
+				"render_schema"
+			],
+			[
+				"field",
+				"Field"
+			],
+			[
+				"bas",
+				"BaseFormModel"
+			],
+			[
+				"render_",
+				"render_json"
+			],
+			[
+				"djan",
+				"get_django_args"
+			],
+			[
+				"treem",
+				"TreeMixin"
+			],
+			[
+				"_to",
+				"config_to_models"
+			],
+			[
+				"load_f",
+				"load_field"
+			],
+			[
+				"qt",
+				"QtMixin"
+			],
+			[
+				"formup",
+				"FormUpdate"
+			],
+			[
+				"get_sea",
+				"get_search_fields"
+			],
+			[
+				"searchf",
+				"SearchForm"
+			],
+			[
+				"list",
+				"List"
+			],
+			[
+				"get_ex",
+				"get_exclude_fields"
+			],
+			[
+				"auto",
+				"AutocompleteFormMixin"
+			],
+			[
+				"searchqu",
+				"search_in_queryset"
+			],
+			[
+				"searc",
+				"FormSearch"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 200.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

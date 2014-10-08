@@ -6,3 +6,5 @@ gunicorn
 psycopg2
 static3
 wsgiref
+django-grappelli
+django-endless-pagination
