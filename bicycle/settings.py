@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'endless_pagination',
+    'raven.contrib.django.raven_compat',
     'blog',
 )
 
@@ -114,3 +115,7 @@ STATICFILES_FINDERS = (
 )
 
 SITE_ID = 1
+
+RAVEN_CONFIG = {
+    'dsn': 'https://c7ff61934753425f8d249f228a625830:d8d741cfdea3408196a8a5fc185486c5@app.getsentry.com/31802',
+}
