@@ -1,14 +1,14 @@
 {% for post in post_list %}
-	<div class="post {{ post.get_trueness_display }}">
+	<div class="post {{ post.get_trueness_display }} centre">
 		<a href="{% url 'post_detail' pk=post.pk %}"><span class="make-link"></span></a>
-		<div class="post-header">
+		<div class="post-header centre">
 			{% if post.title %}
-				<h1>{{ post.title }}</h1>
+				<h2>{{ post.title }}</h2>
 			{% endif %}
 			<span class="post-published">{{ post.published|date:'j E'|upper }}</span>
 		</div>
 		<div class="post-content">
-			{{ post.content }}
+			{{ post.content|linebreaks }}
 		</div>
 	</div>
 {% endfor %}
