@@ -1,5 +1,6 @@
 from django.views.generic import DeleteView, UpdateView
 from django.http import HttpResponse
+import html2text
 
 from models import Post
 
@@ -17,3 +18,16 @@ class PostUpdate(UpdateView):
 				setattr(self.object, attr_name, attr_value)
 		self.object.save()
 		return HttpResponse('ok')
+
+def email_handler(request):
+	post = Post()
+
+	if request.POST['html'] != '': # wow wow we got formatted text
+		converter = html2text.HTML2Text()
+		post.content = converter.handle(request.POST['html'])
+	else:
+		post.content = request.POST['plain']
+
+	post.title = request.POST['headers[Subject]']
+
+	post.save()
