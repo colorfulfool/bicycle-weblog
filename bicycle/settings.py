@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'markdown_deux',
     'endless_pagination',
     'raven.contrib.django.raven_compat',
     'blog',
@@ -52,6 +53,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'bicycle.middleware.DisableCSRF'
 )
 
 ROOT_URLCONF = 'bicycle.urls'
