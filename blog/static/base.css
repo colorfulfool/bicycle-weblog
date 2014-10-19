@@ -59,11 +59,11 @@ h1.blog-title
 
 .secondary
 {
-	letter-spacing: 1px;
 	font-size: 14px;
 	text-transform: uppercase;
 	font-family: 'ProximaNova', sans-serif;
 	color: rgb(120,120,120);
+	letter-spacing: 1px;
 }
 
 .post-content
@@ -146,9 +146,10 @@ h1.blog-title
 	color: rgb(120,120,120);
 }
 
-.post[data-trueness="A"]
+.post[data-trueness="A"] .post-published
 {
 	color: rgb(0,0,0);
+	border-bottom: rgb(120,120,120) 1px solid;
 }
 
 blockquote {

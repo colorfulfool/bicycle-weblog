@@ -10,5 +10,6 @@ urlpatterns = patterns('',
     url(r'^post/(?P<pk>\d+)/$', DetailView.as_view(model=Post), name='post_detail'),
     url(r'^post/(?P<pk>\d+)/delete/$', PostDelete.as_view(model=Post), name='post_delete'),
     url(r'^post/(?P<pk>\d+)/update/$', PostUpdate.as_view(model=Post), name='post_update'),
+    url(r'^post/create/$', PostCreate.as_view(model=Post), name='post_create'),
     url(r'^incoming_email/$', email_handler),
 )

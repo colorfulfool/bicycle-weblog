@@ -1,4 +1,4 @@
-from django.views.generic import DeleteView, UpdateView
+from django.views.generic import DeleteView, UpdateView, CreateView
 from django.http import HttpResponse
 import html2text
 
@@ -18,6 +18,11 @@ class PostUpdate(UpdateView):
 				setattr(self.object, attr_name, attr_value)
 		self.object.save()
 		return HttpResponse('ok')
+
+class PostCreate(CreateView):
+	def get(self, *args, **kwargs):
+		self.object = None
+		return self.render_to_response(context={})
 
 def email_handler(request):
 	post = Post()

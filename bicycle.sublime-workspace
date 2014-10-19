@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"con",
+				"content"
+			],
+			[
+				"data",
+				"data-trueness"
+			],
+			[
+				"attr",
+				"attr_value	forflow"
+			],
+			[
+				"de",
+				"delete	function"
+			],
+			[
+				"del",
+				"DeleteView	class"
+			],
+			[
+				"Pos",
+				"PostDelete	class"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"post",
+				"post-delete"
+			],
+			[
 				"font",
 				"font-family"
 			],
@@ -16,20 +48,12 @@
 				"sites	module"
 			],
 			[
-				"con",
-				"contrib	module"
-			],
-			[
 				"s",
 				"simple_tag	function"
 			],
 			[
 				"head",
 				"header	Tag"
-			],
-			[
-				"Pos",
-				"PostAdmin	class"
 			],
 			[
 				"aut",
@@ -86,10 +110,6 @@
 			[
 				"post_",
 				"post_url"
-			],
-			[
-				"data",
-				"data_string	param"
 			],
 			[
 				"ven",
@@ -494,84 +514,16 @@
 			[
 				"Mu",
 				"MultipleChoiceWidget	class"
-			],
-			[
-				"Mul",
-				"MultipleChoiceField	class"
-			],
-			[
-				"mod",
-				"ModelForm	class"
-			],
-			[
-				"sea",
-				"search_redirect	function"
-			],
-			[
-				"HttpR",
-				"HttpResponseRedirect	class"
-			],
-			[
-				"fun",
-				"function"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "blog/urls.py",
-			"settings":
-			{
-				"buffer_size": 361,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/blog/post_list.html",
-			"settings":
-			{
-				"buffer_size": 126,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "blog/models.py",
-			"settings":
-			{
-				"buffer_size": 792,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "blog/admin.py",
-			"settings":
-			{
-				"buffer_size": 253,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "templates/blog/post_list_page.html",
 			"settings":
 			{
-				"buffer_size": 425,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/blog/base.html",
-			"settings":
-			{
-				"buffer_size": 258,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "blog/static/base.css",
-			"settings":
-			{
-				"buffer_size": 162,
+				"buffer_size": 2727,
 				"line_ending": "Unix"
 			}
 		}
@@ -579,9 +531,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 327.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
 			[
 				"low",
 				"Convert Case: Lower Case"
@@ -621,10 +577,6 @@
 			[
 				"pu",
 				"Git: Push"
-			],
-			[
-				"tabs",
-				"Indentation: Convert to Tabs"
 			],
 			[
 				"stat",
@@ -774,21 +726,32 @@
 	],
 	"file_history":
 	[
-		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/settings.py",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/static/base.css",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templatetags/custom_tags.py",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/requirements.txt",
 		"/Users/colorfulfool/Projects/bicycle/bicycle/templates/blog/base.html",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/templates/blog/post_detail.html",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle.sublime-project",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/urls.py",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templatetags/__init__.py",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/models.py",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/admin.py",
 		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/urls.py",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templates/post_list.html",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/views.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/settings.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/requirements.txt",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/static/base.css",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/static/to-markdown.js",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/static/he.js",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/middleware.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/.idea/vcs.xml",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/static/Hyphenator.js",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/static/humans.txt",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/static/hallo.js",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/templates/blog/post_detail.html",
+		"/Users/colorfulfool/Projects/bicycle/venv/lib/python2.7/site-packages/endless_pagination/views.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/urls.py",
 		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/local_settings.py",
 		"/Users/colorfulfool/Projects/bicycle/bicycle/.env",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/templates/blog/post_list.html",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/models.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/admin.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/templates/blog/post_list_page.html",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templatetags/custom_tags.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle.sublime-project",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templatetags/__init__.py",
+		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templates/post_list.html",
 		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/.gitignore",
 		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle/__init__.py",
 		"/Users/colorfulfool/Projects/bicycle/requirements.txt",
@@ -890,18 +853,7 @@
 		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/static/css/jqtree.css",
 		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/selectToUISlider/selectToUISlider.jQuery.js",
 		"/Users/colorfulfool/Projects/config-generated-forms/repo/temp.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/django/views/generic/base.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/settings.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/ckeditor/samples/tabindex.html",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/bootstrap-tags/bootstrap-tagsinput-angular.js",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/templates/web/config_form.html",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/admin.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/misc/models.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/morris/morris.js",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/icons/models.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/.idea/modules.xml",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/.idea/misc.xml",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/api/fields.py"
+		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/django/views/generic/base.py"
 	],
 	"find":
 	{
@@ -920,6 +872,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"PATH/TO",
+			"children",
+			"delete",
+			".button.",
+			"delete",
+			"100",
+			">a<",
+			"span",
+			"footer-",
 			"en",
 			"==",
 			"buckle",
@@ -1038,16 +999,7 @@
 			"regis",
 			"Co-op Registration",
 			"registra",
-			"BalancePostCard",
-			"BalancePostMixin",
-			"str",
-			"request",
-			"100",
-			"div",
-			"form_group",
-			"ProfileUpdate.as_view()",
-			"form, in",
-			" form, instance, *args, **kwargs"
+			"BalancePostCard"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1070,223 +1022,34 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "blog/urls.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 361,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								359,
-								359
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "templates/blog/post_list.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 126,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								126,
-								126
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_xml": false,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "blog/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 792,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								325,
-								333
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "blog/admin.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 253,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								186,
-								186
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "templates/blog/post_list_page.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 425,
+						"buffer_size": 2727,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								371,
-								371
+								775,
+								775
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
 							"is_xml": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "templates/blog/base.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 258,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								168,
-								168
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_xml": false,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "blog/static/base.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 162,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								162,
-								162
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 95.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1374,6 +1137,46 @@
 		"selected_items":
 		[
 			[
+				"base",
+				"templates/blog/base.html"
+			],
+			[
+				"bas",
+				"blog/static/base.css"
+			],
+			[
+				"sett",
+				"bicycle/settings.py"
+			],
+			[
+				"vi",
+				"blog/views.py"
+			],
+			[
+				"hyp",
+				"blog/static/Hyphenator.js"
+			],
+			[
+				"url",
+				"bicycle/urls.py"
+			],
+			[
+				"env",
+				".env"
+			],
+			[
+				"loc",
+				"bicycle/local_settings.py"
+			],
+			[
+				"req",
+				"requirements.txt"
+			],
+			[
+				"set",
+				"bicycle/settings.py"
+			],
+			[
 				"css",
 				"blog/static/base.css"
 			],
@@ -1386,14 +1189,6 @@
 				"blog/static/base.css"
 			],
 			[
-				"req",
-				"requirements.txt"
-			],
-			[
-				"set",
-				"bicycle/settings.py"
-			],
-			[
 				"se",
 				"bicycle/settings.py"
 			],
@@ -1404,10 +1199,6 @@
 			[
 				"ad",
 				"blog/admin.py"
-			],
-			[
-				"loc",
-				"bicycle/local_settings.py"
 			],
 			[
 				"ign",
@@ -1494,10 +1285,6 @@
 				"templates/web/visibility_dependencies_tag.html"
 			],
 			[
-				"base",
-				"templates/web/base.html"
-			],
-			[
 				"upda",
 				"templates/web/form_update.html"
 			],
@@ -1538,14 +1325,6 @@
 				"config.json"
 			],
 			[
-				"url",
-				"api/urls.py"
-			],
-			[
-				"vi",
-				"api/views.py"
-			],
-			[
 				"pag",
 				"templates/config_editor/complete_page.html"
 			],
@@ -1566,16 +1345,8 @@
 				"config.json"
 			],
 			[
-				"sett",
-				"kandu/settings.py"
-			],
-			[
 				"for",
 				"forms/misc/forms.py"
-			],
-			[
-				"bas",
-				"templates/web/base.html"
 			],
 			[
 				"001",
@@ -1688,10 +1459,6 @@
 			[
 				"ca",
 				"cards_supported.txt"
-			],
-			[
-				"env",
-				".env"
 			],
 			[
 				"ev",
@@ -2271,7 +2038,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 200.0,
 	"status_bar_visible": true,
 	"template_settings":
