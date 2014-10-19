@@ -42,7 +42,6 @@ INSTALLED_APPS = (
     'markdown_deux',
     'endless_pagination',
     'raven.contrib.django.raven_compat',
-    'cloudmailin',
     'blog',
 )
 
