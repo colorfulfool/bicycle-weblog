@@ -16,7 +16,7 @@ class Post(models.Model):
 	published = models.DateTimeField(verbose_name=u'написан', blank=True)
 
 	def save(self, *args, **kwargs):
-		if not self.pk:
+		if not self.published:
 			self.published = timezone.now()
 		return super(Post, self).save(*args, **kwargs)
 
@@ -24,7 +24,7 @@ class Post(models.Model):
 		if self.title:
 			return self.title
 		elif self.content:
-			return re.split(r'[?.!]', self.content, flags=re.UNICODE)[0]
+			return re.split(r'[?.!:]', self.content, flags=re.UNICODE)[0]
 
 	def __unicode__(self):
 		return self.exempt()
