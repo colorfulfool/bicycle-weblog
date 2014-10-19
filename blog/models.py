@@ -2,6 +2,7 @@
 from django.db import models
 from django.contrib.sites.models import Site
 from django.utils import timezone
+import re
 
 
 class Post(models.Model):
@@ -19,13 +20,14 @@ class Post(models.Model):
 			self.published = timezone.now()
 		return super(Post, self).save(*args, **kwargs)
 
-	def __unicode__(self):
+	def exempt(self):
 		if self.title:
 			return self.title
 		elif self.content:
-			return self.content
-		else:
-			return u'Пост от {:%B %d, %Y}'.format(self.published)
+			return re.split(r'[?.!]', self.content, flags=re.UNICODE)[0]
+
+	def __unicode__(self):
+		return self.exempt()
 
 class Blog(models.Model):
 	class Meta:
