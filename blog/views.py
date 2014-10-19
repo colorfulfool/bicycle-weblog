@@ -31,3 +31,5 @@ def email_handler(request):
 	post.title = request.POST['headers[Subject]']
 
 	post.save()
+
+	return HttpResponse('ok')
