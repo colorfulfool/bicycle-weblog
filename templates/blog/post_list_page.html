@@ -4,7 +4,7 @@
 	$(document).ready(function () {
 		$('.button').css('opacity', 0);
 		{% if user.is_staff %}
-		$('.post-header').off('hover');
+		$('.post-header').off('mouseenter mouseleave');
 		$('.post-header').hover(function () {
 			$(this).find('.button').animate({ opacity: 1 }, 200);
 		}, function () {
