@@ -7,4 +7,4 @@ register = template.Library()
 
 @register.simple_tag
 def current_blog():
-	return Site.objects.get_current().blog.title.upper()
+	return Site.objects.get_current().blog.title

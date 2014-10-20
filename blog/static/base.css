@@ -41,6 +41,7 @@ h1.blog-title
 	text-align: center;
 	font-weight: bold;
 	font-family: 'ProximaNova', sans-serif;
+	text-transform: uppercase;
 }
 
 #blog-subtitle
