@@ -56,7 +56,7 @@ var toMarkdown = function(string) {
     {
       patterns: ['i', 'em'],
       replacement: function(str, attrs, innerHTML) {
-        return innerHTML ? '_' + innerHTML + '_' : '';
+        return innerHTML ? '*' + innerHTML + '*' : '';
       }
     },
     {
