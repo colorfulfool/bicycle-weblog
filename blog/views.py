@@ -1,3 +1,4 @@
+# coding: utf8
 from django.views.generic import DeleteView, UpdateView, CreateView
 from django.http import HttpResponse
 import html2text
@@ -23,6 +24,14 @@ class PostCreate(CreateView):
 	def get(self, *args, **kwargs):
 		self.object = None
 		return self.render_to_response(context={})
+
+	def post(self, request, *args, **kwargs):
+		self.object = self.model()
+		for attr_name, attr_value in request.POST.items():
+			if hasattr(self.object, attr_name):
+				setattr(self.object, attr_name, attr_value)
+		self.object.save()
+		return HttpResponse('ok')
 
 def email_handler(request):
 	post = Post()
