@@ -1,5 +1,21 @@
 {% extends "blog/base.html" %}
 {% load endless %}
 {% block content %}
+		<script>
+	$(document).ready(function () {
+		$('.plus-button').css('opacity', 0);
+		{% if user.is_staff %}
+		$('.plus-button').hover(function () {
+			$(this).animate({ opacity: 1 }, 200);
+		}, function () {
+			$(this).animate({ opacity: 0 }, 200);
+		});
+		$('.plus-button').click(function (){
+			window.open("{% url 'post_create' %}");
+		});
+		{% endif %}
+	});
+	</script>
+	<div class="plus-button centre">+</div>
 	{% include "blog/post_list_page.html" %}
 {% endblock %}
