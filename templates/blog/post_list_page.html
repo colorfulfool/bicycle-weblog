@@ -1,4 +1,6 @@
 {% load markdown_deux_tags %}
+{% load endless %}
+{% paginate post_list %}
 {% for post in post_list %}
 	<script>
 	$(document).ready(function () {
@@ -83,3 +85,4 @@
 		{% endif %}
 	</div>
 {% endfor %}
+{% show_more %}

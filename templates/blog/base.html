@@ -1,10 +1,12 @@
 {% load custom_tags %}
 <html>
 <head>
+	{% block head %}
     <link href="/static/base.css" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="/static/he.js"></script>
     <script src="/static/to-markdown.js"></script>
+    {% endblock %}
 
     <title>{% current_blog %}</title>
 </head>
