@@ -1,4 +1,5 @@
 {% load markdown_deux_tags %}
+{% load custom_tags %}
 {% load endless %}
 <script>
 $(document).ready(function () {
@@ -78,7 +79,7 @@ $(document).ready(function () {
 			</div>
 		</div>
 		<div class="post-content">
-			{{ post.content|markdown }}
+			{{ post.content|cipher|markdown }}
 		</div>
 		{% if post.comments %}
 		<span class="secondary">{{ comments_count }}</span>

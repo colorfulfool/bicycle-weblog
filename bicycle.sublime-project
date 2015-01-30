@@ -2,9 +2,10 @@
 	"build_systems":
 	[
 		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 			"name": "Anaconda Python Builder",
 			"selector": "source.python",
-			"shell_cmd": "/Users/colorfulfool/Projects/bicycle/venv/bin/python -u \"$file\""
+			"shell_cmd": "/Users/colorfulfool/Projects/bicycle-weblog/venv/bin/python -u \"$file\""
 		}
 	],
 	"folders":
@@ -16,6 +17,6 @@
 	],
 	"settings":
 	{
-		"python_interpreter": "/Users/colorfulfool/Projects/bicycle/venv/bin/python"
+		"python_interpreter": "/Users/colorfulfool/Projects/bicycle-weblog/venv/bin/python"
 	}
 }

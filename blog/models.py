@@ -37,3 +37,4 @@ class Blog(models.Model):
 	site = models.OneToOneField(Site)
 	title = models.CharField(verbose_name=u'надпись на главной', max_length=256)
 	no_post_titles = models.BooleanField(verbose_name=u'показывать заголовки постов на главной', default=True)
+	enable_cipher = models.BooleanField(default=False)
