@@ -42,6 +42,9 @@ h1.blog-title
 	font-weight: bold;
 	font-family: 'ProximaNova', sans-serif;
 	text-transform: uppercase;
+	background: url(/static/christurnham.jpg) no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 #blog-subtitle
