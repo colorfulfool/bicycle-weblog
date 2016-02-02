@@ -6,7 +6,6 @@ function type_in_heading(text, delay) {
 $(function () {
 	var img = new Image();
 	img.onload = function() {
-		$('.blog-title').html(' ')
 		type_in_heading('Привет Люба', 100)
 		setTimeout(function () {
 			type_in_heading(' как ты?', 100)
