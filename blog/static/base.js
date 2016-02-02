@@ -12,5 +12,5 @@ $(function () {
 			type_in_heading(' как ты?', 100)
 		}, 100*11 + 700)
 	}
-	img.src = "/static/ferry.png"
+	img.src = "/static/ferry.jpg"
 })
