@@ -42,7 +42,23 @@ h1.blog-title
 	font-weight: bold;
 	font-family: 'ProximaNova', sans-serif;
 	text-transform: uppercase;
-	background: url(/static/christurnham.jpg) no-repeat;
+}
+
+.solid
+{
+	color: rgb(225,225,225);
+	border: rgb(225,225,225) 10px solid;
+	/*border: #060606 10px solid;*/
+	padding: 5px 10px;
+}
+
+.with-image
+{
+	background: url(/static/ferry.png) no-repeat;
+}
+
+.see-through
+{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
