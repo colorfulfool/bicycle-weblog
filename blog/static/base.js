@@ -1,7 +1,3 @@
-function type_a_letter(symbol) {
-	$('.blog-title').append(symbol)
-}
-
 function type_in_heading(text, delay) {
 	var i = 0
 	var timer = setInterval(function () { $('.blog-title').append(text[i++]) }, delay)
