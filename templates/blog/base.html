@@ -6,13 +6,15 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="/static/he.js"></script>
     <script src="/static/to-markdown.js"></script>
+    <script src="/static/to-markdown.js"></script>
+    <script src="/static/base.js"></script>
     {% endblock %}
 
     <title>{% current_blog %}</title>
 </head>
 <body>
 <header>
-	<h1 class="blog-title centre solid">{% current_blog %}</h1>
+	<h1 class="blog-title centre solid with-image see-through">{% current_blog %}</h1>
 	<span class="secondary centre" id="blog-subtitle">weblog</span>
 </header>
 {% block content %}
