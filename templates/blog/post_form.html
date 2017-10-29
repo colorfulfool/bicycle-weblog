@@ -21,7 +21,7 @@
 				data: { content: toMarkdown($('#post-content').html()) },
 				success: function (response) {
 					$('#post-content').html('');
-					redeemLocalStorage('#post-content')
+					redeemLocalStorage('post-content')
 
 					$('.post').fadeIn(200);
 					window.close();
