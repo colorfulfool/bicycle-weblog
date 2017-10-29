@@ -17,13 +17,13 @@ $(function () {
 
 
 $(document).ready(function () {
-	document.querySelectorAll('[data-backup][contenteditable]').forEach(function (contenteditable) {
-		contenteditable.innerHTML = fetchFromLocalStorage(contenteditable.id)
-	})
+	document.querySelectorAll('[data-backup]').forEach(function (input) {
+		input.value = fetchFromLocalStorage(input.id)
 
-	$('[data-backup][contenteditable]').on('input', function (event) {
-		saveToLocalStorage(event.target.id, event.target.innerHTML)
-	})	
+		input.addEventListener('input', function (event) {
+			saveToLocalStorage(event.target.id, event.target.value)
+		})
+	})
 })
 
 function saveToLocalStorage(key, value) {
@@ -34,6 +34,18 @@ function fetchFromLocalStorage(key) {
 	return localStorage.getItem(key)
 }
 
-function redeemLocalStorage(key) {
+function purgeLocalStorage(key) {
 	localStorage.removeItem(key)
 }
+
+
+$(document).ready(function () {
+	var heightLimit = 243;
+
+	document.querySelectorAll('textarea').forEach(function (textarea) {
+		input.addEventListener('input', function (event) {
+		  textarea.style.height = ""; /* Reset the height */
+		  textarea.style.height = Math.max(textarea.scrollHeight, heightLimit) + "px";
+		})
+	})
+})

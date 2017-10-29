@@ -1,4 +1,4 @@
-{% load markdown_deux_tags %}
+{% load custom_tags %}
 <html>
 <head>
     <link href="/static/base.css" rel="stylesheet" type="text/css">
@@ -7,6 +7,8 @@
     <script src="/static/he.js"></script>
     <script src="/static/to-markdown.js"></script>
     <script src="/static/base.js"></script>
+
+    <title>Writing — {% current_blog %}</title>
 </head>
 <body>
 	<script>
@@ -14,14 +16,14 @@
 		$('#post-content').focus();	
 
 		$('.submit').click(function () {
-			self = $(this);
-			$('.post').fadeOut(200);
+			$('.post').fadeOut(200)
+
 			$.ajax($(this).attr('data-url'), {
 				type: 'POST',
-				data: { content: toMarkdown($('#post-content').html()) },
+				data: { content: $('#post-content').val() },
 				success: function (response) {
-					$('#post-content').html('');
-					redeemLocalStorage('post-content')
+					$('#post-content').val('')
+					purgeLocalStorage('post-content')
 
 					$('.post').fadeIn(200);
 					window.close();
@@ -31,9 +33,7 @@
 	});
 	</script>
 	<div class="post centre" data-trueness="A">
-		<div id="post-content" class="empty-area" data-backup contenteditable>
-			<p><br></p>
-		</div>
+		<textarea id="post-content" class="empty-area" data-backup></textarea>
 		<div class="buttons">
 			<div class="button submit" data-url="{% url 'post_create' %}">Submit</div>
 		</div>

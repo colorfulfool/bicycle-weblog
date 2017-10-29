@@ -1,9 +1,12 @@
 .empty-area
 {
 	margin-top: 81px;
-	margin-bottom: 54px;
+	margin-bottom: 28px;
 	min-height: 243px;
+
 	outline: none;
+  border: none;
+  resize: none;
 }
 
 .buttons
