@@ -21,7 +21,7 @@ $(document).ready(function () {
 		contenteditable.innerHTML = fetchFromLocalStorage(contenteditable.id)
 	})
 
-	$('[data-backup][contenteditable]').change(function (event) {
+	$('[data-backup][contenteditable]').on('input', function (event) {
 		saveToLocalStorage(event.target.id, event.target.innerHTML)
 	})	
 })
