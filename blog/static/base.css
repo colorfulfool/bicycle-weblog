@@ -87,11 +87,12 @@ h1.blog-title
 	letter-spacing: 1px;
 }
 
-.post-content
+#post-content
 {
 	line-height: 27px;
 	font-size: 16px;
 	color: rgb(40,40,40);
+	font-family: Lora, Helvetica, sans-serif;
 }
 
 .post-header
@@ -162,7 +163,7 @@ h1.blog-title
 	border: solid 1px rgb(120,120,120);
 }
 
-.post[data-trueness="C"] .post-content
+.post[data-trueness="C"] #post-content
 {
 	color: rgb(120,120,120);
 }

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-position"
+			],
+			[
+				"f",
+				"filter	function"
+			],
+			[
 				"con",
 				"content"
 			],
@@ -506,34 +514,78 @@
 			[
 				"Aut",
 				"AutoCurrentCoordinatesMixin"
-			],
-			[
-				"man",
-				"manytomany_fields"
-			],
-			[
-				"Mu",
-				"MultipleChoiceWidget	class"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "templates/blog/post_list_page.html",
+			"file": "templates/blog/base.html",
 			"settings":
 			{
-				"buffer_size": 2727,
+				"buffer_size": 772,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog/static/base.css",
+			"settings":
+			{
+				"buffer_size": 3257,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Remote:   heroku @ git@heroku.com:bicycleforthemind.git\nLocal:    master ~/Projects/bicycle-weblog\nHead:     c481767 Perfect!\n\n\nUntracked files:\n	.sass-cache/\n\nChanges:\n	Modified   bicycle.sublime-workspace\n\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    backspace = discard file/section, shift+backspace = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash, Z = create stash including untracked files\n#    backspace = discard stash",
+			"settings":
+			{
+				"buffer_size": 969,
+				"line_ending": "Unix",
+				"name": "*git-status*: bicycle-weblog",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "blog/static/base.js",
+			"settings":
+			{
+				"buffer_size": 397,
 				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 291.0,
+		"last_filter": "sta",
 		"selected_items":
 		[
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"case",
+				"Convert Case: Lower Case"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
 			[
 				"tabs",
 				"Indentation: Convert to Tabs"
@@ -563,20 +615,8 @@
 				"File: New View into File"
 			],
 			[
-				"pus",
-				"Git: Push"
-			],
-			[
-				"sta",
-				"Git: Status"
-			],
-			[
 				"new",
 				"File: New View into File"
-			],
-			[
-				"pu",
-				"Git: Push"
 			],
 			[
 				"stat",
@@ -695,7 +735,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 476.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -716,16 +756,29 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/colorfulfool/Projects/bicycle/bicycle",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/bicycle",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/blog",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/static",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/templatetags",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/templates",
-		"/Users/colorfulfool/Projects/bicycle/bicycle/templates/blog"
+		"/Users/colorfulfool/Projects/bicycle-weblog",
+		"/Users/colorfulfool/Projects/bicycle-weblog/bicycle",
+		"/Users/colorfulfool/Projects/bicycle-weblog/blog",
+		"/Users/colorfulfool/Projects/bicycle-weblog/blog/static",
+		"/Users/colorfulfool/Projects/bicycle-weblog/blog/templatetags",
+		"/Users/colorfulfool/Projects/bicycle-weblog/templates",
+		"/Users/colorfulfool/Projects/bicycle-weblog/templates/blog"
 	],
 	"file_history":
 	[
+		"/Users/colorfulfool/Projects/bicycle-weblog/templates/blog/post_list.html",
+		"/Users/colorfulfool/Projects/bicycle-weblog/bicycle/local_settings.py",
+		"/Users/colorfulfool/Projects/bicycle-weblog/venv/lib/python2.7/site-packages/django/contrib/webdesign/lorem_ipsum.py",
+		"/Users/colorfulfool/Projects/bicycle-weblog/blog/migrations/0007_blog_enable_cipher.py",
+		"/Users/colorfulfool/Projects/bicycle-weblog/.sass-cache/cd57c9b0980d0f25e92ee54d3ee2a16b903b7e86/_inline-block-list.scssc",
+		"/Users/colorfulfool/Projects/bicycle-weblog/blog/templatetags/custom_tags.py",
+		"/Users/colorfulfool/Projects/bicycle-weblog/blog/models.py",
+		"/Users/colorfulfool/Projects/bicycle-weblog/templates/blog/post_list_page.html",
+		"/Users/colorfulfool/Projects/bicycle-weblog/bicycle.sublime-project",
+		"/Users/colorfulfool/Projects/bicycle-weblog/venv/lib/python2.7/site-packages/dj_database_url-0.3.0.dist-info/top_level.txt",
+		"/Users/colorfulfool/Projects/bicycle-weblog/venv/lib/python2.7/site-packages/grappelli/templates/admin/base_site.html",
+		"/Users/colorfulfool/Projects/bicycle-weblog/templates/blog/base.html",
+		"/Users/colorfulfool/Projects/bicycle-weblog/blog/static/base.css",
 		"/Users/colorfulfool/Projects/bicycle/bicycle/templates/blog/base.html",
 		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/urls.py",
 		"/Users/colorfulfool/Projects/bicycle/bicycle/blog/views.py",
@@ -840,20 +893,7 @@
 		"/Users/colorfulfool/Projects/config-generated-forms/repo/api/serializers.py",
 		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/rest_framework/serializers.py",
 		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/rest_framework/relations.py",
-		"/Users/colorfulfool/Desktop/63cdc8893d3ddbbdb021/kau2.cpp",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/static/js/underscore.js",
-		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/django/forms/widgets.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/kandu/local_settings.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/utils.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/static/js/tree.jquery.js",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/config.pickle",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/static/js/jquery-2.0.2.min.js",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0010_auto__add_subord.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/forms/migrations/0001_initial.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/config_editor/static/css/jqtree.css",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/web/static/js/plugin/selectToUISlider/selectToUISlider.jQuery.js",
-		"/Users/colorfulfool/Projects/config-generated-forms/repo/temp.py",
-		"/Users/colorfulfool/Projects/config-generated-forms/venv/lib/python2.7/site-packages/django/views/generic/base.py"
+		"/Users/colorfulfool/Desktop/63cdc8893d3ddbbdb021/kau2.cpp"
 	],
 	"find":
 	{
@@ -872,6 +912,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"letter",
+			"bicycle",
 			"PATH/TO",
 			"children",
 			"delete",
@@ -997,9 +1039,7 @@
 			"Exception",
 			"models_old_str",
 			"regis",
-			"Co-op Registration",
-			"registra",
-			"BalancePostCard"
+			"Co-op Registration"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1027,34 +1067,143 @@
 			[
 				{
 					"buffer": 0,
-					"file": "templates/blog/post_list_page.html",
+					"file": "templates/blog/base.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2727,
+						"buffer_size": 772,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								775,
-								775
+								543,
+								543
 							]
 						],
 						"settings":
 						{
-							"is_xml": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "blog/static/base.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								845,
+								845
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 95.0,
+						"translation.y": 741.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 969,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": true,
+							"draw_white_space": "none",
+							"git_repo": "/Users/colorfulfool/Projects/bicycle-weblog",
+							"git_status": true,
+							"git_view": "status",
+							"syntax": "Packages/SublimeGit/syntax/SublimeGit Status.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "blog/static/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								356,
+								356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -1075,16 +1224,36 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
@@ -1125,6 +1294,7 @@
 	{
 		"height": 112.0
 	},
+	"pinned_build_system": "Packages/User/love.sublime-build",
 	"project": "bicycle.sublime-project",
 	"replace":
 	{
@@ -1134,8 +1304,13 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"pos",
+				"templates/blog/post_list.html"
+			],
 			[
 				"base",
 				"templates/blog/base.html"
@@ -1506,6 +1681,7 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1513,7 +1689,8 @@
 	},
 	"select_symbol":
 	{
-		"height": 47.0,
+		"height": 392.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -2029,9 +2206,9 @@
 				"FormSearch"
 			]
 		],
-		"width": 392.0
+		"width": 593.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

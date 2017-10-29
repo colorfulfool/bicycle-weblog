@@ -28,10 +28,10 @@ $(document).ready(function () {
 		{
 			$.ajax($(this).attr('data-url'), {
 				type: 'POST',
-				data: { content: toMarkdown(self.parents('.post').find('.post-content').html()) },
+				data: { content: toMarkdown(self.parents('.post').find('#post-content').html()) },
 				success: function (response) {
 					self.removeClass('active');
-					self.parents('.post').find('.post-content').removeAttr('contenteditable');
+					self.parents('.post').find('#post-content').removeAttr('contenteditable');
 				}
 			});
 
@@ -39,7 +39,7 @@ $(document).ready(function () {
 		else
 		{
 			self.addClass('active');
-			self.parents('.post').find('.post-content').attr('contenteditable','true');
+			self.parents('.post').find('#post-content').attr('contenteditable','true');
 		}
 
 	});
@@ -78,7 +78,7 @@ $(document).ready(function () {
 				<div class="trueness {% if post.trueness == 'C' %}active{% endif %}" data-value="C"></div>
 			</div>
 		</div>
-		<div class="post-content">
+		<div id="post-content">
 			{{ post.content|cipher|markdown }}
 		</div>
 		{% if post.comments %}

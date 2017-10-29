@@ -10,15 +10,18 @@
 <body>
 	<script>
 	$(document).ready(function () {
-		$('.post-content').focus();
+		$('#post-content').focus();	
+
 		$('.submit').click(function () {
 			self = $(this);
 			$('.post').fadeOut(200);
 			$.ajax($(this).attr('data-url'), {
 				type: 'POST',
-				data: { content: toMarkdown($('.post-content').html()) },
+				data: { content: toMarkdown($('#post-content').html()) },
 				success: function (response) {
-					$('.post-content').html('');
+					$('#post-content').html('');
+					redeemLocalStorage('#post-content')
+
 					$('.post').fadeIn(200);
 					window.close();
 				}
@@ -27,16 +30,11 @@
 	});
 	</script>
 	<div class="post centre" data-trueness="A">
-		<div class="post-content empty-area" contenteditable>
+		<div id="post-content" class="empty-area" data-backup contenteditable>
 			<p><br></p>
 		</div>
 		<div class="buttons">
 			<div class="button submit" data-url="{% url 'post_create' %}">Submit</div>
-<!-- 			<div class="button trueness-container">
-				<div class="trueness {% if post.trueness == 'A' %}active{% endif %}" data-value="A"></div>
-				<div class="trueness {% if post.trueness == 'B' %}active{% endif %}" data-value="B"></div>
-				<div class="trueness {% if post.trueness == 'C' %}active{% endif %}" data-value="C"></div>
-			</div> -->
 		</div>
 	</div>
 </body>
