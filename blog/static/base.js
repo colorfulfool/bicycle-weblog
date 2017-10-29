@@ -24,6 +24,8 @@ $(document).ready(function () {
 			saveToLocalStorage(event.target.id, event.target.value)
 		})
 	})
+
+	document.getElementById('post-content').focus()
 })
 
 function saveToLocalStorage(key, value) {
