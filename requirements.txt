@@ -11,3 +11,4 @@ django-endless-pagination
 raven
 django-markdown-deux
 html2text
+langdetect
