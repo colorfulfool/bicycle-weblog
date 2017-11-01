@@ -4,6 +4,8 @@ from django.contrib.sites.models import Site
 from django.utils import timezone
 import re
 
+from datetime import datetime
+
 
 class Post(models.Model):
 	class Meta:
@@ -28,6 +30,12 @@ class Post(models.Model):
 
 	def __unicode__(self):
 		return self.exempt()
+
+	def publication_date_short(self):
+		if self.published.year == datetime.now().year:
+			return self.published.strftime('%-d %B')
+		else:
+			return self.published.strftime('%-d %B %Y')
 
 class Blog(models.Model):
 	class Meta:

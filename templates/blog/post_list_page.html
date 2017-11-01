@@ -71,7 +71,7 @@ $(document).ready(function () {
 				<span class="button post-update" data-url="{% url 'post_update' pk=post.pk %}">Edit</span>
 				<span class="button post-delete" data-url="{% url 'post_delete' pk=post.pk %}">Delete</span>
 			</span>
-			<span class="secondary post-published">{{ post.published|date:'j E' }}</span>
+			<span class="secondary post-published">{{ post.publication_date_short }}</span>
 			<div class="button trueness-container" data-url="{% url 'post_update' pk=post.pk %}">
 				<div class="trueness {% if post.trueness == 'A' %}active{% endif %}" data-value="A"></div>
 				<div class="trueness {% if post.trueness == 'B' %}active{% endif %}" data-value="B"></div>
