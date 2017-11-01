@@ -34,11 +34,12 @@ class Post(models.Model):
 	def __unicode__(self):
 		return self.exempt()
 
+
 	def post_language(self):
 		return langdetect.detect(self.content)
 
 	def post_language_as_locale(self):
-		return 'en_GB' if self.post_language() == 'en' else 'ru_RU'
+		return ('en_GB.utf8' if self.post_language() == 'en' else 'ru_RU.utf8')
 
 	def publication_date_short(self):
 		locale.setlocale(locale.LC_TIME, self.post_language_as_locale())
