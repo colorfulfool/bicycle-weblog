@@ -6,6 +6,7 @@ import re
 
 from datetime import datetime
 import locale
+from django.conf import settings
 
 import langdetect
 
@@ -39,7 +40,10 @@ class Post(models.Model):
 		return langdetect.detect(self.content)
 
 	def post_language_as_locale(self):
-		return ('en_GB.utf8' if self.post_language() == 'en' else 'ru_RU.utf8')
+		if settings.DEBUG:
+			return ('en_GB' if self.post_language() == 'en' else 'ru_RU')
+		else:
+			return ('en_GB.utf8' if self.post_language() == 'en' else 'ru_RU.utf8')
 
 	def publication_date_short(self):
 		locale.setlocale(locale.LC_TIME, self.post_language_as_locale())
