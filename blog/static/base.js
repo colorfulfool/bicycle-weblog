@@ -17,31 +17,6 @@ $(function () {
 
 
 $(document).ready(function () {
-	document.querySelectorAll('[data-backup]').forEach(function (input) {
-		input.value = fetchFromLocalStorage(input.id)
-
-		input.addEventListener('input', function (event) {
-			saveToLocalStorage(event.target.id, event.target.value)
-		})
-	})
-
-	document.getElementById('post-content').focus()
-})
-
-function saveToLocalStorage(key, value) {
-	localStorage.setItem(key, value)
-}
-
-function fetchFromLocalStorage(key) {
-	return localStorage.getItem(key)
-}
-
-function purgeLocalStorage(key) {
-	localStorage.removeItem(key)
-}
-
-
-$(document).ready(function () {
 	var minHeight = 243;
 
 	document.querySelectorAll('textarea').forEach(function (textarea) {
@@ -52,4 +27,6 @@ $(document).ready(function () {
 		  textarea.style.height = Math.max(textarea.scrollHeight, minHeight) + "px";
 		})
 	})
+  
+	document.getElementById('post-content').focus()
 })

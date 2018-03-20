@@ -7,6 +7,7 @@
     <script src="/static/he.js"></script>
     <script src="/static/to-markdown.js"></script>
     <script src="/static/base.js"></script>
+    <script src="/static/local-storage.js"></script>
 
     <title>Writing — {% current_blog %}</title>
 </head>
@@ -31,7 +32,7 @@
 	<div class="post centre" data-trueness="A">
 		<textarea id="post-content" class="empty-area" data-backup></textarea>
 		<div class="buttons">
-			<div class="button submit" data-url="{% url 'post_create' %}" data-backup-purge="click">Submit</div>
+			<div class="button submit" data-url="{% url 'post_create' %}" data-backup-purge="post-content">Submit</div>
 		</div>
 	</div>
 </body>
