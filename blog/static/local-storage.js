@@ -3,7 +3,7 @@ $(document).ready(function () {
 		input.value = fetchFromLocalStorage(input.id)
 
 		input.addEventListener('input', function (event) {
-			saveToLocalStorage(event.target.id, event.target.value)
+			saveToLocalStorage(input.id, input.value)
 		})
 	})
   
