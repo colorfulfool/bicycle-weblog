@@ -66,6 +66,12 @@ var toMarkdown = function(string) {
       }
     },
     {
+      patterns: 'span',
+      replacement: function(str, attrs, innerHTML) {
+        return innerHTML ? '_' + he.decode(innerHTML) + '_' : '';
+      }
+    },
+    {
       patterns: 'img',
       type: 'void',
       replacement: function(str, attrs, innerHTML) {
