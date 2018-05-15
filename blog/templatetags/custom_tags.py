@@ -25,3 +25,8 @@ def cipher(text):
 			return random.choice(u'абвгдежзиклмнопрстуфчхшщыэюя')
 
 	return re.sub(r'\w', swap, text, flags=re.UNICODE)
+  
+  
+@register.filter(is_safe=True)
+def extra_markdown(text):
+  return re.sub(r'_([\S ]+?)_', r'<span class="markdown--special-word">\1</span>', text)

@@ -79,7 +79,7 @@ $(document).ready(function () {
 			</div>
 		</div>
 		<div id="post-content">
-			{{ post.content|cipher|markdown }}
+			{{ post.content|cipher|markdown|extra_markdown }}
 		</div>
 		{% if post.comments %}
 		<span class="secondary">{{ comments_count }}</span>
