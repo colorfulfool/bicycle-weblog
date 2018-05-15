@@ -18,7 +18,7 @@ class Post(models.Model):
 
 	title = models.CharField(verbose_name=u'заголовок', max_length=300, blank=True)
 	content = models.TextField(verbose_name=u'содержимое')
-	trueness = models.CharField(verbose_name=u'точность', choices=(('A', 'pivotal'), ('B', 'plain'), ('C', 'bullshit')), default='B', max_length=1)
+	trueness = models.CharField(verbose_name=u'точность', choices=(('A', 'solid'), ('B', 'plain'), ('C', 'bullshit')), default='B', max_length=1)
 	published = models.DateTimeField(verbose_name=u'написан', blank=True)
 
 	def save(self, *args, **kwargs):
