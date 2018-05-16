@@ -6,6 +6,7 @@ import re
 
 from datetime import datetime
 import locale
+from django.utils.formats import date_format
 from django.conf import settings
 
 import langdetect
@@ -47,11 +48,8 @@ class Post(models.Model):
 
 	def publication_date_short(self):
 		locale.setlocale(locale.LC_TIME, self.language_as_locale())
-
-		if self.published.year == datetime.now().year:
-			return self.published.strftime('%-d %B')
-		else:
-			return self.published.strftime('%-d %B %Y')
+		date_string = self.published.strftime('%-d %B %Y')
+		return date_string.replace(str(datetime.now().year), "")
 
 class Blog(models.Model):
 	class Meta:
