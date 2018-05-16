@@ -1,0 +1,20 @@
+<div class="post centre" data-controller="editing" data-editing-url="<%= url_for(post) %>">
+  <div class="post-header centre">
+		<span class="post-buttons">
+			<span class="button post-update" data-action="startEditing">Edit</span>
+			<span class="button post-delete" data-action="delete">Delete</span>
+		</span>
+    
+    <span class="secondary post-published"><%= post.publication_date %></span>
+    
+		<div class="button trueness-container">
+			<div class="trueness" data-action="setTruebess" data-value="A"></div>
+			<div class="trueness" data-action="setTruebess" data-value="B"></div>
+			<div class="trueness" data-action="setTruebess" data-value="C"></div>
+		</div>
+  </div>
+  
+  <div id="post-content">
+    <%= markdown post.content %>
+  </div>
+</div>
