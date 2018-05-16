@@ -62,8 +62,9 @@ $(document).ready(function () {
 {% paginate post_list %}
 {% for post in post_list %}
 	<div class="post post--{{ post.get_trueness_display }} centre" data-trueness="{{ post.trueness }}">
-		<a href="{% url 'post_detail' pk=post.pk %}"><!-- <span class="make-link"></span> --></a>
+		<!--<a href="{% url 'post_detail' pk=post.pk %}"> <span class="make-link"></span></a>-->
 		<div class="post-header centre">
+      
 <!-- 			{% if post.title %}
 				<h2>{{ post.title }}</h2>
 			{% endif %} -->
@@ -71,16 +72,21 @@ $(document).ready(function () {
 				<span class="button post-update" data-url="{% url 'post_update' pk=post.pk %}">Edit</span>
 				<span class="button post-delete" data-url="{% url 'post_delete' pk=post.pk %}">Delete</span>
 			</span>
+      
 			<span class="secondary post-published">{{ post.publication_date_short }}</span>
+      
 			<div class="button trueness-container" data-url="{% url 'post_update' pk=post.pk %}">
 				<div class="trueness {% if post.trueness == 'A' %}active{% endif %}" data-value="A"></div>
 				<div class="trueness {% if post.trueness == 'B' %}active{% endif %}" data-value="B"></div>
 				<div class="trueness {% if post.trueness == 'C' %}active{% endif %}" data-value="C"></div>
 			</div>
+      
 		</div>
+    
 		<div id="post-content">
 			{{ post.content|cipher|markdown|extra_markdown }}
 		</div>
+    
 		{% if post.comments %}
 		<span class="secondary">{{ comments_count }}</span>
 		{% endif %}
