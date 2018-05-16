@@ -36,17 +36,17 @@ class Post(models.Model):
 		return self.exempt()
 
 
-	def post_language(self):
+	def language(self):
 		return langdetect.detect(self.content)
 
-	def post_language_as_locale(self):
+	def language_as_locale(self):
 		if settings.DEBUG:
-			return ('en_GB' if self.post_language() == 'en' else 'ru_RU')
+			return ('en_GB' if self.language() == 'en' else 'ru_RU')
 		else:
-			return ('en_GB.utf8' if self.post_language() == 'en' else 'ru_RU.utf8')
+			return ('en_GB.utf8' if self.language() == 'en' else 'ru_RU.utf8')
 
 	def publication_date_short(self):
-		locale.setlocale(locale.LC_TIME, self.post_language_as_locale())
+		locale.setlocale(locale.LC_TIME, self.language_as_locale())
 
 		if self.published.year == datetime.now().year:
 			return self.published.strftime('%-d %B')
