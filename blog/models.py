@@ -40,16 +40,11 @@ class Post(models.Model):
 	def language(self):
 		return langdetect.detect(self.content)
 
-	def language_as_locale(self):
-		if settings.DEBUG:
-			return ('en_GB' if self.language() == 'en' else 'ru_RU')
-		else:
-			return ('en_GB.utf8' if self.language() == 'en' else 'ru_RU.utf8')
-
+	def publication_date(self):
+		return format_date(self.published, locale=self.language(), format="long")
+		
 	def publication_date_short(self):
-		date_string = format_date(self.published, locale=self.language(), format="long")
-		sans_current_year = re.sub(r"(?:, )?" + str(datetime.now().year) + r"(?: .\.)?", "", date_string)
-		return sans_current_year
+		return re.sub(r"(?:, )?" + str(datetime.now().year) + r"(?: .\.)?", "", self.publication_date())
 
 class Blog(models.Model):
 	class Meta:
