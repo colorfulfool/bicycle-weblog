@@ -27,14 +27,14 @@ class Post(models.Model):
 			self.published = timezone.now()
 		return super(Post, self).save(*args, **kwargs)
 
-	def exempt(self):
+	def excerpt(self):
 		if self.title:
 			return self.title
 		elif self.content:
 			return re.split(r'[?.!:]', self.content, flags=re.UNICODE)[0]
 
 	def __unicode__(self):
-		return self.exempt()
+		return self.excerpt()
 
 
 	def language(self):

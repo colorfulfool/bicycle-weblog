@@ -4,7 +4,7 @@ from models import *
 
 class PostAdmin(admin.ModelAdmin):
 	radio_fields = {'trueness': admin.HORIZONTAL}
-	list_display = ('exempt', 'published', 'trueness')
+	list_display = ('excerpt', 'published', 'trueness')
 
 admin.site.register(Post, PostAdmin)
 admin.site.register(Blog)
