@@ -44,7 +44,8 @@ class Post(models.Model):
 		return format_date(self.published, locale=self.language(), format="long")
 		
 	def publication_date_short(self):
-		return re.sub(r"(?:, )?" + str(datetime.now().year) + r"(?: .\.)?", "", self.publication_date())
+		current_year = r"(?:, )?" + str(datetime.now().year) + r"(?: .\.)?"
+		return re.sub(current_year, "", self.publication_date())
 
 class Blog(models.Model):
 	class Meta:
