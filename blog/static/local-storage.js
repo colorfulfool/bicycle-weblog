@@ -8,10 +8,10 @@ $(document).ready(function () {
 		})
 	})
   
-	document.querySelectorAll('[data-backup-purge]').forEach(function (button) {
-    purgeTrigger = button.getAttribute('data-backup-purge')
+	document.querySelectorAll('[data-backup-purge-on]').forEach(function (button) {
+    purgeEvent = button.getAttribute('data-backup-purge-on')
     
-		button.addEventListener(purgeTrigger, function (event) {
+		button.addEventListener(purgeEvent, function (event) {
 			purgeLocalStorage()
 		})
 	})
