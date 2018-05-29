@@ -15,13 +15,14 @@
 <body>
 	<script>
 	$(document).ready(function () {
-    submitButton = $('.submit')
+    submitButton = document.querySelector('.submit')
     
-		submitButton.click(function () {
-			$.ajax(submitButton.attr('data-url'), {
+		$(submitButton).click(function () {
+			$.ajax($(submitButton).attr('data-url'), {
 				type: 'POST',
 				data: { content: $('#post-content').val() },
 				success: function (response) {
+          submitButton.dispatchEvent( new CustomEvent('request:success') )
     			$('.post').fadeOut(200)
           
           window.close()
@@ -34,7 +35,7 @@
 	<div class="post centre" data-trueness="A">
 		<textarea id="post-content" class="empty-area" data-backup="value"></textarea>
 		<div class="buttons">
-			<div class="button submit" data-url="{% url 'post_create' %}" data-backup-purge-on="click">Submit</div>
+			<div class="button submit" data-url="{% url 'post_create' %}" data-backup-purge-on="request:success">Submit</div>
 		</div>
 	</div>
 </body>
