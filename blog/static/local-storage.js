@@ -2,6 +2,7 @@ $(document).ready(function () {
 	document.querySelectorAll('[data-backup]').forEach(function (input) {
     property = input.getAttribute('data-backup')
 		input[property] = fetchFromLocalStorage(input.id)
+    input.dispatchEvent( new CustomEvent('input') )
 
 		input.addEventListener('input', function (event) {
 			saveToLocalStorage(input.id, input[property])
