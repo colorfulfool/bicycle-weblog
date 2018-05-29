@@ -95,7 +95,11 @@ h1.blog-title
 	font-family: Helvetica, sans-serif;
 }
 
-#post-content img { width: 100%; }
+#post-content img { 
+  max-width: 100%; 
+  margin: auto;
+  display: block;
+}
 
 .post-header
 {
