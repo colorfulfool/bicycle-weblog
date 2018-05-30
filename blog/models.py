@@ -35,6 +35,9 @@ class Post(models.Model):
 
 	def __unicode__(self):
 		return self.excerpt()
+    
+	def get_absolute_url(self):
+		return "/#post%s" % (self.id,)
 
 
 	def language(self):
