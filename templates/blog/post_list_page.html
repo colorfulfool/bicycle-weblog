@@ -2,14 +2,15 @@
 {% load custom_tags %}
 {% load endless %}
 {% paginate post_list %}
+
 {% for post in post_list %}
 	<div id="post{{ post.id }}" class="post post--{{ post.get_trueness_display }} centre" data-trueness="{{ post.trueness }}">
-		<div class="post-header centre">
+		<div class="post-header centre" data-behavior="post-header">
       
     	{% if user.is_staff %}
   			<span class="post-buttons">
-  				<span class="button button--transparent post-update" data-url="{% url 'post_update' pk=post.pk %}">Edit</span>
-  				<span class="button button--transparent post-delete" data-url="{% url 'post_delete' pk=post.pk %}">Delete</span>
+  				<span class="button button--transparent" data-behavior="post-update" data-url="{% url 'post_update' pk=post.pk %}">Edit</span>
+  				<span class="button button--transparent" data-behavior="post-delete" data-url="{% url 'post_delete' pk=post.pk %}">Delete</span>
   			</span>
       {% endif %}
       
@@ -17,9 +18,9 @@
       
     	{% if user.is_staff %}
   			<div class="button button--transparent trueness-container" data-url="{% url 'post_update' pk=post.pk %}">
-  				<div class="trueness {% if post.trueness == 'A' %}active{% endif %}" data-value="A"></div>
-  				<div class="trueness {% if post.trueness == 'B' %}active{% endif %}" data-value="B"></div>
-  				<div class="trueness {% if post.trueness == 'C' %}active{% endif %}" data-value="C"></div>
+  				<div class="trueness {% if post.trueness == 'A' %}active{% endif %}" data-behavior="trueness" data-value="A"></div>
+  				<div class="trueness {% if post.trueness == 'B' %}active{% endif %}" data-behavior="trueness" data-value="B"></div>
+  				<div class="trueness {% if post.trueness == 'C' %}active{% endif %}" data-behavior="trueness" data-value="C"></div>
   			</div>
       {% endif %}
       

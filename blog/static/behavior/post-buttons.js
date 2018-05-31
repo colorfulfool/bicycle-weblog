@@ -1,12 +1,12 @@
 $(document).ready(function () {
-	$('.post-list').on('mouseenter', '.post-header', function () {
+	$('[data-behavior="post-list"]').on('mouseenter', '[data-behavior="post-header"]', function () {
 		$(this).find('.button').removeClass('button--transparent');
 	});
-	$('.post-list').on('mouseleave', '.post-header', function () {
+	$('[data-behavior="post-list"]').on('mouseleave', '[data-behavior="post-header"]', function () {
 		$(this).find('.button').addClass('button--transparent');
 	});
   
-	$('.post-list').on('click', '.post-delete', function () {
+	$('[data-behavior="post-list"]').on('click', '[data-behavior="post-delete"]', function () {
 		self = $(this);
 		$.ajax($(this).attr('data-url'), {
 			type: 'POST',
@@ -16,7 +16,7 @@ $(document).ready(function () {
 		});
 	});
   
-	$('.post-list').on('click', '.post-update', function () {
+	$('[data-behavior="post-list"]').on('click', '[data-behavior="post-update"]', function () {
 		self = $(this);
 		if (self.hasClass('active'))
 		{
@@ -38,13 +38,13 @@ $(document).ready(function () {
 
 	});
   
-	$('.post-list').on('click', '.trueness', function () {
+	$('[data-behavior="post-list"]').on('click', '[data-behavior="trueness"]', function () {
 		self = $(this);
-		$.ajax($(this).parents('.trueness-container').attr('data-url'), {
+		$.ajax($(this).parents('[data-behavior="trueness-container"]').attr('data-url'), {
 			type: 'POST',
 			data: { trueness: $(this).attr('data-value') },
 			success: function (response) {
-				self.parents('.trueness-container').find('.trueness').removeClass('active');
+				self.parents('[data-behavior="trueness-container"]').find('.trueness').removeClass('active');
 				self.addClass('active');
 				self.parents('.post').attr('data-trueness', self.attr('data-value'));
 			}

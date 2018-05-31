@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  submitButton = document.querySelector('.submit')
+  submitButton = document.querySelector('[data-behavior="submit"]')
   
 	$(submitButton).click(function () {
 		$.ajax($(submitButton).attr('data-url'), {
