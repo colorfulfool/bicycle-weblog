@@ -1,8 +1,6 @@
 {% extends "blog/base.html" %}
 {% block content %}
-  {% if user.is_staff %}
-  	<div class="plus-button centre" data-url="{% url 'post_create' %}">+</div>
-  {% endif %}
+	<div class="plus-button centre" data-url="{% url 'post_create' %}">+</div>
     
 	{% include page_template %}
 {% endblock %}

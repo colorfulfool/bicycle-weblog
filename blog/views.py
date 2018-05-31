@@ -1,6 +1,6 @@
 # coding: utf8
 from django.views.generic import DeleteView, UpdateView, CreateView
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 import html2text
 
 from models import Post
@@ -21,6 +21,15 @@ class PostUpdate(UpdateView):
 		return HttpResponse('ok')
 
 class PostCreate(CreateView):
+	def login_path(self, next="/"):
+		return "/admin/login/?next=%s" % (next,)
+
+	def dispatch(self, request, *args, **kwargs):
+		if not request.user.is_staff:
+			return HttpResponseRedirect(self.login_path(next=request.path))
+		return super(PostCreate, self).dispatch(request, *args, **kwargs)
+		
+  
 	def get(self, *args, **kwargs):
 		self.object = None
 		return self.render_to_response(context={})
