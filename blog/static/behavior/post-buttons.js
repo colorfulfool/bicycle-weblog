@@ -1,11 +1,9 @@
 $(document).ready(function () {
-  $('.post-header .button').css('opacity', 0);
-  
 	$('.post-list').on('mouseenter', '.post-header', function () {
-		$(this).find('.button').animate({ opacity: 1 }, 200);
+		$(this).find('.button').removeClass('button--transparent');
 	});
 	$('.post-list').on('mouseleave', '.post-header', function () {
-		$(this).find('.button').animate({ opacity: 0 }, 200);
+		$(this).find('.button').addClass('button--transparent');
 	});
   
 	$('.post-list').on('click', '.post-delete', function () {

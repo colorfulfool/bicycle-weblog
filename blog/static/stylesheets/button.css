@@ -1,0 +1,7 @@
+.button {
+  transition: opacity 0.2s linear;
+}
+
+.button--transparent {
+  opacity: 0;
+}
