@@ -1,16 +1,9 @@
 {% load custom_tags %}
 <html>
 <head>
-    <link href="/static/base.css" rel="stylesheet" type="text/css">
-    <link href="/static/create.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="/static/he.js"></script>
-    <script src="/static/to-markdown.js"></script>
-    <script src="/static/base.js"></script>
-    <script src="/static/markdown.js"></script>
-    <script src="/static/local-storage.js"></script>
+	{% include "stylesheets_javascripts.html" %}
 
-    <title>Writing — {% current_blog %}</title>
+  <title>Writing — {% current_blog %}</title>
 </head>
 <body>
 	<script>

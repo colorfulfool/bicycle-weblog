@@ -1,17 +1,9 @@
 {% load custom_tags %}
 <html>
 <head>
-	{% block head %}
-    <link href="/static/base.css" rel="stylesheet" type="text/css">
-    <link href="/static/markdown.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="/static/he.js"></script>
-    <script src="/static/to-markdown.js"></script>
-    <script src="/static/markdown.js"></script>
-    <script src="/static/base.js"></script>
-    {% endblock %}
+	{% include "stylesheets_javascripts.html" %}
 
-    <title>{% current_blog %}</title>
+  <title>{% current_blog %}</title>
 </head>
 <body>
 <header>
