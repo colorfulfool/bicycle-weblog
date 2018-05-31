@@ -5,7 +5,7 @@
 
 {% for post in post_list %}
 	<div id="post{{ post.id }}" class="post post--{{ post.get_trueness_display }} centre" data-trueness="{{ post.trueness }}">
-		<div class="post-header centre" data-behavior="post-header">
+		<div class="post-header centre" data-reveal-transparent>
       
     	{% if user.is_staff %}
   			<span class="post-buttons">
