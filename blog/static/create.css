@@ -11,13 +11,13 @@
   resize: none;
 }
 
-.buttons
+.post-form .buttons
 {
 	width: 81px;
 	text-align: center;
 }
 
-.button
+.post-form .button
 {
 	margin-bottom: 10px;
 	display: inline-block;
