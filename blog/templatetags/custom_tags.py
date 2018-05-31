@@ -29,4 +29,4 @@ def cipher(text):
   
 @register.filter(is_safe=True)
 def extra_markdown(text):
-  return re.sub(r'_([\S ]+?)_', r'<span class="markdown--special-word">\1</span>', text)
+  return re.sub(r'_([\S ]+?)_', r'<span class="special-word">\1</span>', text)
