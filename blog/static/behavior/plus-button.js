@@ -1,10 +1,8 @@
 $(document).ready(function () {
-	$('.plus-button').css('opacity', 0);
-  
 	$('.plus-button').hover(function () {
-		$(this).animate({ opacity: 1 }, 200);
+		$(this).removeClass('button--transparent');
 	}, function () {
-		$(this).animate({ opacity: 0 }, 200);
+		$(this).addClass('button--transparent');
 	});
   
 	$('.plus-button').click(function (){
