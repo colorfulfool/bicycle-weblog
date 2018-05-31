@@ -1,29 +1,18 @@
 {% extends "blog/base.html" %}
 {% block content %}
-	<script>
-	$(document).ready(function () {
-		$('.plus-button').css('opacity', 0);
-		{% if user.is_staff %}
-		$('.plus-button').hover(function () {
-			$(this).animate({ opacity: 1 }, 200);
-		}, function () {
-			$(this).animate({ opacity: 0 }, 200);
-		});
-		$('.plus-button').click(function (){
-			window.open("{% url 'post_create' %}");
-		});
-		{% endif %}
-	});
-	</script>
-	<div class="plus-button centre">+</div>
+  {% if user.is_staff %}
+  	<div class="plus-button centre" data-url="{% url 'post_create' %}">+</div>
+  {% endif %}
+    
 	{% include page_template %}
 {% endblock %}
 {% block head %}
     {{ block.super }}
+    
     <script src="{{ STATIC_URL }}endless_pagination/js/endless-pagination.js"></script>
     <script>
-    $(document).ready(function() {
-    	$.endlessPaginate({paginateOnScroll: true});
-	});
-	</script>
+      $(document).ready(function() {
+      	$.endlessPaginate({paginateOnScroll: true});
+  	  });
+	  </script>
 {% endblock %}
