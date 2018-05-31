@@ -2,8 +2,7 @@
 {% block content %}
 	<div class="plus-button centre" data-url="{% url 'post_create' %}">+</div>
     
-	{% include page_template %}
-{% endblock %}
-{% block head %}
-    {{ block.super }}
+  <div class="post-list">
+  	{% include page_template %}
+  </div>
 {% endblock %}
