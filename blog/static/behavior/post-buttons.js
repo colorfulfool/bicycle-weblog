@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('.button').css('opacity', 0);
+  $('.post-header .button').css('opacity', 0);
 	$('.post-header').off('mouseenter mouseleave');
   
 	$('.post-header').hover(function () {
