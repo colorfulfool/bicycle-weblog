@@ -18,9 +18,9 @@
       
     	{% if user.is_staff %}
   			<div class="button button--transparent trueness-container" data-url="{% url 'post_update' pk=post.pk %}">
-  				<div class="trueness {% if post.trueness == 'A' %}active{% endif %}" data-behavior="trueness" data-value="A"></div>
-  				<div class="trueness {% if post.trueness == 'B' %}active{% endif %}" data-behavior="trueness" data-value="B"></div>
-  				<div class="trueness {% if post.trueness == 'C' %}active{% endif %}" data-behavior="trueness" data-value="C"></div>
+  				<div class="trueness-container__option {% if post.trueness == 'A' %}active{% endif %}" data-behavior="trueness" data-value="A"></div>
+  				<div class="trueness-container__option {% if post.trueness == 'B' %}active{% endif %}" data-behavior="trueness" data-value="B"></div>
+  				<div class="trueness-container__option {% if post.trueness == 'C' %}active{% endif %}" data-behavior="trueness" data-value="C"></div>
   			</div>
       {% endif %}
       
