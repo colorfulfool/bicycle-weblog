@@ -37,7 +37,7 @@ $(document).ready(function () {
 			type: 'POST',
 			data: { trueness: $(this).attr('data-value') },
 			success: function (response) {
-				self.parents('[data-behavior="trueness-container"]').find('.trueness').removeClass('active');
+				self.parents('[data-behavior="trueness-container"]').find('[data-behavior="trueness"]').removeClass('active');
 				self.addClass('active');
 				self.parents('[data-behavior="post"]').attr('data-trueness', self.attr('data-value'));
 			}

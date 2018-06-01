@@ -32,12 +32,12 @@
 	position: absolute;
 }
 
-.post--bullshit .post__content
+.post[data-trueness=C] .post__content
 {
 	color: rgb(120,120,120);
 }
 
-.post--solid .post__publication-date
+.post[data-trueness=A] .post__publication-date
 {
 	color: rgb(0,0,0);
 	border-bottom: rgb(120,120,120) 1px solid;
