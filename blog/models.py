@@ -44,7 +44,7 @@ class Post(models.Model):
 		return langdetect.detect(self.content)
 
 	def publication_date(self):
-		return format_date(self.published, locale=self.language(), format="long")
+		return format_date(self.published, format="long", locale=self.language())
 		
 	def publication_date_short(self):
 		current_year = r"(?:, )?" + str(datetime.now().year) + r"(?: .\.)?"
