@@ -81,20 +81,6 @@ header
 	letter-spacing: 1px;
 }
 
-.button
-{
-	border: solid 1px;
-	font-size: 14px;
-	border-radius: 30px;
-	padding: 1px 10px;
-	cursor: pointer;
-	color: rgb(120,120,120);
-	margin-right: 5px;
-	z-index: 10;
-	line-height: 22px;
-	/*text-transform: uppercase;*/
-}
-
 .trueness-container
 {
 	right: 0px;
@@ -121,13 +107,6 @@ header
 	padding: 1px;
 	cursor: pointer;
 	/*display: inline-block;*/
-}
-
-.trueness-container__option.active
-{
-	background-color: rgb(120,120,120);
-	color: rgb(255,255,255);
-	border: solid 1px rgb(120,120,120);
 }
 
 .plus-button
