@@ -4,7 +4,7 @@ $(document).ready(function () {
 		$.ajax($(this).attr('data-url'), {
 			type: 'POST',
 			success: function (response) {
-				self.parents('.post').hide(200);
+				self.parents('[data-behavior="post"]').hide(200);
 			}
 		});
 	});
@@ -15,10 +15,10 @@ $(document).ready(function () {
 		{
 			$.ajax($(this).attr('data-url'), {
 				type: 'POST',
-				data: { content: toMarkdown(self.parents('.post').find('[data-behavior="post-content"]').html()) },
+				data: { content: toMarkdown(self.parents('[data-behavior="post"]').find('[data-behavior="post-content"]').html()) },
 				success: function (response) {
 					self.removeClass('active');
-					self.parents('.post').find('[data-behavior="post-content"]').removeAttr('contenteditable');
+					self.parents('[data-behavior="post"]').find('[data-behavior="post-content"]').removeAttr('contenteditable');
 				}
 			});
 
@@ -26,7 +26,7 @@ $(document).ready(function () {
 		else
 		{
 			self.addClass('active');
-			self.parents('.post').find('[data-behavior="post-content"]').attr('contenteditable','true');
+			self.parents('[data-behavior="post"]').find('[data-behavior="post-content"]').attr('contenteditable','true');
 		}
 
 	});
@@ -39,7 +39,7 @@ $(document).ready(function () {
 			success: function (response) {
 				self.parents('[data-behavior="trueness-container"]').find('.trueness').removeClass('active');
 				self.addClass('active');
-				self.parents('.post').attr('data-trueness', self.attr('data-value'));
+				self.parents('[data-behavior="post"]').attr('data-trueness', self.attr('data-value'));
 			}
 		});
 	});

@@ -4,7 +4,7 @@
 {% paginate post_list %}
 
 {% for post in post_list %}
-	<div id="post{{ post.id }}" class="post post--{{ post.get_trueness_display }} centre" data-trueness="{{ post.trueness }}">
+	<div id="post{{ post.id }}" class="post post--{{ post.get_trueness_display }} centre" data-behavior="post" data-trueness="{{ post.trueness }}">
 		<div class="post__header centre" data-reveal-transparent>
       
     	{% if user.is_staff %}
