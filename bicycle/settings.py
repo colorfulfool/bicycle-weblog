@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'markdown_deux',
     'endless_pagination',
+    'jquery',
     'raven.contrib.django.raven_compat',
     'blog',
 )
