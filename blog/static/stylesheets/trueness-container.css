@@ -1,5 +1,12 @@
 .trueness-container
 {
+	font-size: 14px;
+	border-radius: 30px;
+	color: rgb(120,120,120);
+	margin-right: 5px;
+	z-index: 10;
+	line-height: 22px;
+  
 	right: 0px;
 	position: absolute;
 	padding: 2px;
