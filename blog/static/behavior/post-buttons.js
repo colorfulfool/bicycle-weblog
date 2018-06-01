@@ -11,13 +11,13 @@ $(document).ready(function () {
   
 	$('[data-behavior="post-list"]').on('click', '[data-behavior="post-update"]', function () {
 		self = $(this);
-		if (self.hasClass('button--active'))
+		if (self.hasClass('active'))
 		{
 			$.ajax($(this).attr('data-url'), {
 				type: 'POST',
 				data: { content: toMarkdown(self.parents('.post').find('[data-behavior="post-content"]').html()) },
 				success: function (response) {
-					self.removeClass('button--active');
+					self.removeClass('active');
 					self.parents('.post').find('[data-behavior="post-content"]').removeAttr('contenteditable');
 				}
 			});
@@ -25,7 +25,7 @@ $(document).ready(function () {
 		}
 		else
 		{
-			self.addClass('button--active');
+			self.addClass('active');
 			self.parents('.post').find('[data-behavior="post-content"]').attr('contenteditable','true');
 		}
 
@@ -37,8 +37,8 @@ $(document).ready(function () {
 			type: 'POST',
 			data: { trueness: $(this).attr('data-value') },
 			success: function (response) {
-				self.parents('[data-behavior="trueness-container"]').find('.trueness').removeClass('button--active');
-				self.addClass('button--active');
+				self.parents('[data-behavior="trueness-container"]').find('.trueness').removeClass('active');
+				self.addClass('active');
 				self.parents('.post').attr('data-trueness', self.attr('data-value'));
 			}
 		});

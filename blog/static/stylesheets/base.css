@@ -81,34 +81,6 @@ header
 	letter-spacing: 1px;
 }
 
-.trueness-container
-{
-	right: 0px;
-	position: absolute;
-	padding: 2px;
-	border: 1px solid;
-	cursor: default;
-	/*display: block;*/
-	/*float: left;*/
-	vertical-align: bottom;
-	margin-top: 2px;
-	display: inline-block;
-	border-radius: 32px;
-}
-
-.trueness-container__option
-{
-	float: left;
-	width: 10px;
-	height: 10px;
-	border: dashed 1px;
-	margin: 1px 2px;
-	border-radius: 30px;
-	padding: 1px;
-	cursor: pointer;
-	/*display: inline-block;*/
-}
-
 .plus-button
 {
 	text-align: center;
