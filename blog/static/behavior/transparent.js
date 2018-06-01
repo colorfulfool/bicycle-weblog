@@ -1,12 +1,12 @@
 $(document).ready(function () {
   
 	$('body').on('mouseenter', '[data-reveal-transparent]', function () {
-		$(this).find('.button--transparent').addBack('.button--transparent')
-      .removeClass('button--transparent').addClass('button--transparent--revealed')
+		$(this).find('.transparent').addBack('.transparent')
+      .removeClass('transparent').addClass('transparent--revealed')
 	});
 	$('body').on('mouseleave', '[data-reveal-transparent]', function () {
-		$(this).find('.button--transparent--revealed').addBack('.button--transparent--revealed')
-      .removeClass('button--transparent--revealed').addClass('button--transparent')
+		$(this).find('.transparent--revealed').addBack('.transparent--revealed')
+      .removeClass('transparent--revealed').addClass('transparent')
 	});
   
 });

@@ -1,11 +1,4 @@
 $(document).ready(function () {
-	$('[data-behavior="post-list"]').on('mouseenter', '[data-behavior="post__header"]', function () {
-		$(this).find('.button').removeClass('button--transparent');
-	});
-	$('[data-behavior="post-list"]').on('mouseleave', '[data-behavior="post__header"]', function () {
-		$(this).find('.button').addClass('button--transparent');
-	});
-  
 	$('[data-behavior="post-list"]').on('click', '[data-behavior="post-delete"]', function () {
 		self = $(this);
 		$.ajax($(this).attr('data-url'), {
