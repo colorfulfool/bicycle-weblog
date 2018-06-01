@@ -1,0 +1,39 @@
+.trueness {
+  &__outline {
+  	font-size: 14px;
+  	border-radius: 30px;
+  	color: rgb(120,120,120);
+  	margin-right: 5px;
+  	z-index: 10;
+  	line-height: 22px;
+    
+  	right: 0px;
+  	position: absolute;
+  	padding: 2px;
+  	border: 1px solid;
+  	cursor: default;
+  	/*display: block;*/
+  	/*float: left;*/
+  	vertical-align: bottom;
+  	margin-top: 2px;
+  	display: inline-block;
+  	border-radius: 32px;
+  }
+
+  &__option {
+  	float: left;
+  	width: 10px;
+  	height: 10px;
+  	border: dashed 1px;
+  	margin: 1px 2px;
+  	border-radius: 30px;
+  	padding: 1px;
+  	cursor: pointer;
+  	/*display: inline-block;*/
+
+    &--active {
+    	background-color: rgb(120,120,120);
+    	color: rgb(255,255,255);
+    	border: solid 1px rgb(120,120,120);
+    }
+}

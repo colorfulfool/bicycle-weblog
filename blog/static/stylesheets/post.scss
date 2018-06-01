@@ -1,0 +1,43 @@
+.post
+{
+  &__container {
+  	width: 697px;
+  	margin-bottom: 162px;
+  }
+  
+  &__header
+  {
+  	text-align: center;
+  	margin-bottom: 27px;
+  	position: relative;
+  	width: 589px;
+  }
+
+  &__content
+  {
+  	line-height: 27px;
+  	font-size: 16px;
+  	color: rgb(40,40,40);
+  	font-family: Helvetica, sans-serif;
+  }
+
+  &__buttons
+  {
+  	left: 0px;
+  	position: absolute;
+  }
+
+
+  &[data-trueness="C"] {
+   .post__content {
+    	color: rgb(120,120,120);
+    }
+  }
+
+  &[data-trueness="A"] {
+   .post__publication-date {
+    	color: rgb(0,0,0);
+    	border-bottom: rgb(120,120,120) 1px solid;
+    }
+  }
+}
