@@ -72,12 +72,6 @@ header
 	letter-spacing: 2px;
 }
 
-.post
-{
-	width: 697px;
-	margin-bottom: 162px;
-}
-
 .font--secondary
 {
 	font-size: 14px;
@@ -85,33 +79,6 @@ header
 	font-family: 'ProximaNova', sans-serif;
 	color: rgb(120,120,120);
 	letter-spacing: 1px;
-}
-
-.post__content
-{
-	line-height: 27px;
-	font-size: 16px;
-	color: rgb(40,40,40);
-	font-family: Helvetica, sans-serif;
-}
-
-.post__content img { 
-  max-width: 100%; 
-  margin: auto;
-  display: block;
-}
-
-.post__header
-{
-	text-align: center;
-	margin-bottom: 27px;
-	position: relative;
-	width: 589px;
-}
-
-.post__header h2
-{
-	margin-bottom: 27px;
 }
 
 .button
@@ -126,12 +93,6 @@ header
 	z-index: 10;
 	line-height: 22px;
 	/*text-transform: uppercase;*/
-}
-
-.post__buttons
-{
-	left: 0px;
-	position: absolute;
 }
 
 .trueness-container
@@ -167,17 +128,6 @@ header
 	background-color: rgb(120,120,120);
 	color: rgb(255,255,255);
 	border: solid 1px rgb(120,120,120);
-}
-
-.post--bullshit .post__content
-{
-	color: rgb(120,120,120);
-}
-
-.post--solid .post__publication-date
-{
-	color: rgb(0,0,0);
-	border-bottom: rgb(120,120,120) 1px solid;
 }
 
 .plus-button
