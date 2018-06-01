@@ -78,7 +78,7 @@ h1.blog-title
 	margin-bottom: 162px;
 }
 
-.secondary
+.font--secondary
 {
 	font-size: 14px;
 	text-transform: uppercase;
@@ -87,7 +87,7 @@ h1.blog-title
 	letter-spacing: 1px;
 }
 
-#post-content
+.post__content
 {
 	line-height: 27px;
 	font-size: 16px;
@@ -95,13 +95,13 @@ h1.blog-title
 	font-family: Helvetica, sans-serif;
 }
 
-#post-content img { 
+.post__content img { 
   max-width: 100%; 
   margin: auto;
   display: block;
 }
 
-.post-header
+.post__header
 {
 	text-align: center;
 	margin-bottom: 27px;
@@ -109,7 +109,7 @@ h1.blog-title
 	width: 589px;
 }
 
-.post-header h2
+.post__header h2
 {
 	margin-bottom: 27px;
 }
@@ -128,7 +128,7 @@ h1.blog-title
 	/*text-transform: uppercase;*/
 }
 
-.post-buttons
+.post__buttons
 {
 	left: 0px;
 	position: absolute;
@@ -169,12 +169,12 @@ h1.blog-title
 	border: solid 1px rgb(120,120,120);
 }
 
-.post[data-trueness="C"] #post-content
+.post[data-trueness="C"] .post__content
 {
 	color: rgb(120,120,120);
 }
 
-.post[data-trueness="A"] .post-published
+.post[data-trueness="A"] .post__publication-date
 {
 	color: rgb(0,0,0);
 	border-bottom: rgb(120,120,120) 1px solid;

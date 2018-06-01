@@ -1,8 +1,8 @@
 $(document).ready(function () {
-	$('[data-behavior="post-list"]').on('mouseenter', '[data-behavior="post-header"]', function () {
+	$('[data-behavior="post-list"]').on('mouseenter', '[data-behavior="post__header"]', function () {
 		$(this).find('.button').removeClass('button--transparent');
 	});
-	$('[data-behavior="post-list"]').on('mouseleave', '[data-behavior="post-header"]', function () {
+	$('[data-behavior="post-list"]').on('mouseleave', '[data-behavior="post__header"]', function () {
 		$(this).find('.button').addClass('button--transparent');
 	});
   
@@ -22,10 +22,10 @@ $(document).ready(function () {
 		{
 			$.ajax($(this).attr('data-url'), {
 				type: 'POST',
-				data: { content: toMarkdown(self.parents('.post').find('#post-content').html()) },
+				data: { content: toMarkdown(self.parents('.post').find('[data-behavior="post-content"]').html()) },
 				success: function (response) {
 					self.removeClass('active');
-					self.parents('.post').find('#post-content').removeAttr('contenteditable');
+					self.parents('.post').find('[data-behavior="post-content"]').removeAttr('contenteditable');
 				}
 			});
 
@@ -33,7 +33,7 @@ $(document).ready(function () {
 		else
 		{
 			self.addClass('active');
-			self.parents('.post').find('#post-content').attr('contenteditable','true');
+			self.parents('.post').find('[data-behavior="post-content"]').attr('contenteditable','true');
 		}
 
 	});

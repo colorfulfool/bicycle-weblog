@@ -5,16 +5,16 @@
 
 {% for post in post_list %}
 	<div id="post{{ post.id }}" class="post post--{{ post.get_trueness_display }} centre" data-trueness="{{ post.trueness }}">
-		<div class="post-header centre" data-reveal-transparent>
+		<div class="post__header centre" data-reveal-transparent>
       
     	{% if user.is_staff %}
-  			<span class="post-buttons">
+  			<span class="post__buttons">
   				<span class="button button--transparent" data-behavior="post-update" data-url="{% url 'post_update' pk=post.pk %}">Edit</span>
   				<span class="button button--transparent" data-behavior="post-delete" data-url="{% url 'post_delete' pk=post.pk %}">Delete</span>
   			</span>
       {% endif %}
       
-			<span class="secondary post-published">{{ post.publication_date_short }}</span>
+			<span class="post__publication-date font--secondary">{{ post.publication_date_short }}</span>
       
     	{% if user.is_staff %}
   			<div class="button button--transparent trueness-container" data-url="{% url 'post_update' pk=post.pk %}">
@@ -26,13 +26,10 @@
       
 		</div>
     
-		<div id="post-content" class="markdown-scope">
+		<div class="post__content markdown-scope" data-behavior="post-content">
 			{{ post.content|cipher|markdown|extra_markdown }}
 		</div>
     
-		{% if post.comments %}
-  		<span class="secondary">{{ comments_count }}</span>
-		{% endif %}
 	</div>
 {% endfor %}
 {% show_more %}
