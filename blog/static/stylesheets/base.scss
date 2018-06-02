@@ -11,6 +11,7 @@
 }
 
 @import "mixins";
+@import "vertical";
 
 body {
 	font-family: Helvetica, sans-serif;
@@ -26,9 +27,9 @@ p {
 footer
 {
 	font-family: 'ProximaNova', sans-serif;
-	height: 54px;
+	height: vertical(2);
 	text-align: center;
-	padding-top: 27px;
+	padding-top: vertical(1);
 	background-image: linear-gradient(to right, rgb(120,120,120) 60%, rgba(255,255,255,0) 0%);
 	background-position: top;
 	background-size: 30px 1px;
