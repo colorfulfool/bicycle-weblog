@@ -15,3 +15,4 @@ langdetect
 babel
 django-jquery
 django_compressor==1.4
+django-libsass
