@@ -11,10 +11,10 @@
   &__header
   {
     @include centre;
-  	text-align: center;
-  	margin-bottom: 27px;
-  	position: relative;
   	width: 589px;
+  	margin-bottom: 27px;
+  	text-align: center;
+  	position: relative;
   }
   
   &__publication-date {
