@@ -1,16 +1,24 @@
+@import "mixins";
+
 .post
 {
   &__container {
+    @include centre;
   	width: 697px;
   	margin-bottom: 162px;
   }
   
   &__header
   {
+    @include centre;
   	text-align: center;
   	margin-bottom: 27px;
   	position: relative;
   	width: 589px;
+  }
+  
+  &__publication-date {
+    @include font--secondary;
   }
 
   &__content
