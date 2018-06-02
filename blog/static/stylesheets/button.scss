@@ -2,7 +2,7 @@
   transition: opacity 0.2s linear;
 }
 
-.transparent:not(.active) {
+.transparent:not(.button--active) {
   opacity: 0;
 }
 

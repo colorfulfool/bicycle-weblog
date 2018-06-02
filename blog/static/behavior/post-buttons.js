@@ -11,13 +11,13 @@ $(document).ready(function () {
   
 	$('[data-behavior="post-list"]').on('click', '[data-behavior="post-update"]', function () {
 		self = $(this);
-		if (self.hasClass('active'))
+		if (self.hasClass('button--active'))
 		{
 			$.ajax($(this).attr('data-url'), {
 				type: 'POST',
 				data: { content: toMarkdown(self.parents('[data-behavior="post"]').find('[data-behavior="post-content"]').html()) },
 				success: function (response) {
-					self.removeClass('active');
+					self.removeClass('button--active');
 					self.parents('[data-behavior="post"]').find('[data-behavior="post-content"]').removeAttr('contenteditable');
 				}
 			});
@@ -25,7 +25,7 @@ $(document).ready(function () {
 		}
 		else
 		{
-			self.addClass('active');
+			self.addClass('button--active');
 			self.parents('[data-behavior="post"]').find('[data-behavior="post-content"]').attr('contenteditable','true');
 		}
 

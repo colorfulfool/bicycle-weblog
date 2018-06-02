@@ -4,7 +4,7 @@
 {% paginate post_list %}
 
 {% for post in post_list %}
-	<div id="post{{ post.id }}" class="post__container centre" data-behavior="post" data-trueness="{{ post.trueness }}">
+	<div id="post{{ post.id }}" class="post post__container centre" data-behavior="post" data-trueness="{{ post.trueness }}">
 		<div class="post__header centre" data-reveal-transparent>
       
     	{% if user.is_staff %}
@@ -17,7 +17,7 @@
 			<span class="post__publication-date font--secondary">{{ post.publication_date_short }}</span>
       
     	{% if user.is_staff %}
-  			<div class="button trueness__outline transparent" data-url="{% url 'post_update' pk=post.pk %}" data-behavior="trueness-container">
+  			<div class="trueness__outline transparent" data-url="{% url 'post_update' pk=post.pk %}" data-behavior="trueness-container">
   				<div class="trueness__option {% if post.trueness == 'A' %}trueness__option--active{% endif %}" data-behavior="trueness" data-value="A"></div>
   				<div class="trueness__option {% if post.trueness == 'B' %}trueness__option--active{% endif %}" data-behavior="trueness" data-value="B"></div>
   				<div class="trueness__option {% if post.trueness == 'C' %}trueness__option--active{% endif %}" data-behavior="trueness" data-value="C"></div>

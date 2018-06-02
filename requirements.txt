@@ -14,3 +14,4 @@ html2text
 langdetect
 babel
 django-jquery
+django_compressor

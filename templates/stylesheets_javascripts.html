@@ -1,10 +1,16 @@
+{% load compress %}
+
+{% compress css %}
   <link href="/static/stylesheets/base.css" rel="stylesheet" type="text/css">
   <link href="/static/stylesheets/create.css" rel="stylesheet" type="text/css">
-  <link href="/static/stylesheets/markdown.css" rel="stylesheet" type="text/css">
-  <link href="/static/stylesheets/button.css" rel="stylesheet" type="text/css">
-  <link href="/static/stylesheets/post.css" rel="stylesheet" type="text/css">
-  <link href="/static/stylesheets/trueness.css" rel="stylesheet" type="text/css">
+  <link href="/static/stylesheets/plus-button.css" rel="stylesheet" type="text/css">
+  <link href="/static/stylesheets/markdown.scss" rel="stylesheet" type="text/x-scss">
+  <link href="/static/stylesheets/button.scss" rel="stylesheet" type="text/x-scss">
+  <link href="/static/stylesheets/post.scss" rel="stylesheet" type="text/x-scss">
+  <link href="/static/stylesheets/trueness.scss" rel="stylesheet" type="text/x-scss">
+{% endcompress %}
   
+{% compress js %}
   <script src="/static/js/jquery.js"></script>
   <script src="/static/he.js"></script>
   <script src="/static/to-markdown.js"></script>
@@ -25,3 +31,4 @@
     	$.endlessPaginate({paginateOnScroll: true});
 	  });
   </script>
+{% endcompress %}

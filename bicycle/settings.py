@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'markdown_deux',
     'endless_pagination',
     'jquery',
+    'compressor',
     'raven.contrib.django.raven_compat',
     'blog',
 )
@@ -115,7 +116,13 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'django.contrib.staticfiles.finders.FileSystemFinder',
+    'compressor.finders.CompressorFinder',
 )
+
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'sass --scss {infile} {outfile}'),
+)
+
 
 SITE_ID = 1
 
