@@ -1,0 +1,49 @@
+@import "mixins";
+@import "vertical";
+
+.blog-title
+{
+  @include centre;
+	width: 648px;
+	font-size: 80px;
+	letter-spacing: 5px;
+	line-height: vertical(3);
+	text-align: center;
+	font-weight: bold;
+	font-family: 'ProximaNova', sans-serif;
+	text-transform: uppercase;
+
+  &.solid
+  {
+  	color: #060606;
+  	/*border: rgb(225,225,225) 10px solid;*/
+  	border: #060606 10px solid;
+  	padding: 5px 10px;
+  }
+
+  &.with-image
+  {
+  	background: url(/static/ferry.jpg) no-repeat;
+  	background-position: 20% 50%;
+  }
+
+  &.see-through
+  {
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  }
+}
+
+header
+{
+	margin-top: vertical(4);
+	margin-bottom: vertical(4);
+}
+
+.blog-subtitle
+{
+	color: rgb(180,180,180);
+	margin-top: vertical(2);
+	text-align: center;
+	letter-spacing: 2px;
+}

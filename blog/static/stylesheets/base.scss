@@ -20,53 +20,6 @@ span.make-link {
 	left: 0;
 }
 
-header
-{
-	margin-top: 108px;
-	margin-bottom: 108px;
-}
-
-.blog-title
-{
-  @include centre;
-	font-size: 80px;
-	letter-spacing: 5px;
-	line-height: 81px;
-	width: 648px;
-	text-align: center;
-	font-weight: bold;
-	font-family: 'ProximaNova', sans-serif;
-	text-transform: uppercase;
-}
-
-.solid
-{
-	color: #060606;
-	/*border: rgb(225,225,225) 10px solid;*/
-	border: #060606 10px solid;
-	padding: 5px 10px;
-}
-
-.with-image
-{
-	background: url(/static/ferry.jpg) no-repeat;
-	background-position: 20% 50%;
-}
-
-.see-through
-{
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.blog-subtitle
-{
-	color: rgb(180,180,180);
-	text-align: center;
-	margin-top: 54px;
-	letter-spacing: 2px;
-}
-
 body {
 	font-family: Helvetica, sans-serif;
 	font-size: 16px;
