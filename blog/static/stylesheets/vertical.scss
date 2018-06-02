@@ -1,0 +1,9 @@
+$baseline: 27px;
+
+body {
+  line-height: $baseline;
+}
+
+@function vertical($number-of-lines: 1) {
+  @return $baseline * $number-of-lines;
+}

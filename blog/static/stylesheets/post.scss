@@ -1,18 +1,19 @@
 @import "mixins";
+@import "vertical";
 
 .post
 {
   &__container {
     @include centre;
   	width: 697px;
-  	margin-bottom: 162px;
+  	margin-bottom: vertical(6);
   }
   
   &__header
   {
     @include centre;
   	width: 589px;
-  	margin-bottom: 27px;
+  	margin-bottom: vertical();
   	text-align: center;
   	position: relative;
   }
@@ -23,7 +24,7 @@
 
   &__content
   {
-  	line-height: 27px;
+  	line-height: vertical();
   	font-size: 16px;
   	color: rgb(40,40,40);
   	font-family: Helvetica, sans-serif;

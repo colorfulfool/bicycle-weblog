@@ -1,13 +1,13 @@
 @font-face {
-font-family: ProximaNova;
-font-weight: normal;
-src: url("/static/ProximaNova-Reg.otf") format("opentype");
+  font-family: ProximaNova;
+  font-weight: normal;
+  src: url("/static/ProximaNova-Reg.otf") format("opentype");
 }
 
 @font-face {
-font-family: ProximaNova;
-font-weight: bold;
-src: url("/static/ProximaNova-Bold.otf") format("opentype");
+  font-family: ProximaNova;
+  font-weight: bold;
+  src: url("/static/ProximaNova-Bold.otf") format("opentype");
 }
 
 @import "mixins";
@@ -70,7 +70,6 @@ header
 body {
 	font-family: Helvetica, sans-serif;
 	font-size: 16px;
-	line-height: 27px;
 	margin: 0;
 	padding: 0;
 }
