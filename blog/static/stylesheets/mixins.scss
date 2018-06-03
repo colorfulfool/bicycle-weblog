@@ -1,8 +1,10 @@
+@import "variables";
+
 @mixin font--secondary {
-	font-size: 14px;
+	font-size: $button;
 	text-transform: uppercase;
 	font-family: 'ProximaNova', sans-serif;
-	color: rgb(120,120,120);
+	color: $fill;
 	letter-spacing: 1px;
 }
 
@@ -14,7 +16,7 @@
 }
 
 @mixin button-base {
-	font-size: 14px;
+	font-size: $button;
 	border-radius: 30px;
 	margin-right: 5px;
 	z-index: 10;

@@ -1,5 +1,6 @@
 @import "mixins";
 @import "vertical";
+@import "variables";
 
 .blog-title
 {
@@ -15,9 +16,8 @@
 
   &.solid
   {
-  	color: #060606;
-  	/*border: rgb(225,225,225) 10px solid;*/
-  	border: #060606 10px solid;
+  	color: $solid;
+  	border: $solid 10px solid;
   	padding: 5px 10px;
   }
 
@@ -42,7 +42,7 @@ header
 
 .blog-subtitle
 {
-	color: rgb(180,180,180);
+	color: $lightfill;
 	margin-top: vertical(2);
 	text-align: center;
 	letter-spacing: 2px;

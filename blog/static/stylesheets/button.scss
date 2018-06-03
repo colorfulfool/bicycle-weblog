@@ -1,3 +1,5 @@
+@import "variables";
+
 .button, .plus-button {
   transition: opacity 0.2s linear;
 }
@@ -10,14 +12,14 @@
 
 .button {
   @include button-base;
-  cursor: pointer;
 	border: solid 1px;
+	color: $fill;
+  cursor: pointer;
 	padding: 1px 10px;
-	color: rgb(120,120,120);
 
   &--active {
-  	background-color: rgb(120,120,120);
-  	color: rgb(255,255,255);
-  	border: solid 1px rgb(120,120,120);
+  	background-color: $fill;
+  	border: solid 1px $fill;
+  	color: $background;
   }
 }

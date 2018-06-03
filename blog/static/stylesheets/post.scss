@@ -26,7 +26,7 @@
   {
   	line-height: vertical();
   	font-size: 16px;
-  	color: rgb(40,40,40);
+  	color: $text;
   	font-family: Helvetica, sans-serif;
   }
 
@@ -39,14 +39,14 @@
 
   &[data-trueness="C"] {
    .post__content {
-    	color: rgb(120,120,120);
+    	color: $fill;
     }
   }
 
   &[data-trueness="A"] {
    .post__publication-date {
-    	color: rgb(0,0,0);
-    	border-bottom: rgb(120,120,120) 1px solid;
+    	color: $text;
+    	border-bottom: $fill 1px solid;
     }
   }
 }

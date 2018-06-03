@@ -12,12 +12,15 @@
 
 @import "mixins";
 @import "vertical";
+@import "variables";
 
 body {
 	font-family: Helvetica, sans-serif;
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
+  background-color: $background;
+  color: $text;
 }
 
 p {
@@ -30,7 +33,7 @@ footer
 	height: vertical(2);
 	text-align: center;
 	padding-top: vertical(1);
-	background-image: linear-gradient(to right, rgb(120,120,120) 60%, rgba(255,255,255,0) 0%);
+	background-image: linear-gradient(to right, $fill 60%, rgba($background,0) 0%);
 	background-position: top;
 	background-size: 30px 1px;
 	background-repeat: repeat-x;

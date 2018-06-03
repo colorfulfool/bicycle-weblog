@@ -1,14 +1,19 @@
+@import "vertical";
+@import "variables";
+
 .empty-area
 {
-	margin-top: 81px;
-	margin-bottom: 28px;
-	min-height: 243px;
+	margin-top: vertical(3);
+	margin-bottom: vertical(1);
+	min-height: vertical(9);
 
 	width: 100%;
 
 	outline: none;
   border: none;
   resize: none;
+  
+  background-color: $background;
 }
 
 .post-form .buttons
