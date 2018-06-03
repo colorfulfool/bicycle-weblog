@@ -1,10 +1,15 @@
 // colors
 $background: white;
-$text: rgb(40,40,40);
-$fill: rgb(120,120,120);
+$foreground: rgb(40,40,40);
+$accent: rgb(120,120,120);
 
 // special colors
 $solid: rgb(6,6,6);
+$special-word: #5B5941;
+
+// aliases
+$fill: $accent;
+$text: $foreground;
 
 // inferred
 $lightfill: rgba($fill, 0.666);
