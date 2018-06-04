@@ -1,5 +1,7 @@
 @import "variables";
 
+$button-color: $fill;
+
 .button, .plus-button {
   transition: opacity 0.2s linear;
 }
@@ -12,14 +14,14 @@
 
 .button {
   @include button-base;
-	border: solid 1px;
-	color: $fill;
+	border: solid 1px $button-color;
+	color: $button-color;
   cursor: pointer;
 	padding: 1px 10px;
 
   &--active {
-  	background-color: $fill;
-  	border: solid 1px $fill;
+  	background-color: $button-color;
+  	border: solid 1px $button-color;
   	color: $background;
   }
 }

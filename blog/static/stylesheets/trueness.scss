@@ -1,6 +1,8 @@
 @import "mixins";
 @import "variables";
 
+$button-color: $fill;
+
 .trueness {
   &__outline {
     @include button-base;
@@ -8,7 +10,7 @@
   	right: 0px;
   	position: absolute;
   	padding: 2px;
-  	border: 1px solid $fill;
+  	border: 1px solid $button-color;
   	cursor: default;
   	vertical-align: bottom;
   	margin-top: 2px;
@@ -20,16 +22,16 @@
   	float: left;
   	width: 10px;
   	height: 10px;
-  	border: 1px dashed $fill;
+  	border: 1px dashed $button-color;
   	margin: 1px 2px;
   	border-radius: 30px;
   	padding: 1px;
   	cursor: pointer;
 
     &--active {
-    	background-color: $fill;
+    	background-color: $button-color;
+    	border: solid 1px $button-color;
     	color: $background;
-    	border: solid 1px $fill;
     }
   }
 }
