@@ -39,7 +39,7 @@
 
   &[data-trueness="C"] {
    .post__content {
-    	color: $fill;
+    	color: $fill !important;
     }
   }
 
