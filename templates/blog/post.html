@@ -1,0 +1,30 @@
+{% load markdown_deux_tags %}
+{% load custom_tags %}
+
+<div id="post{{ post.id }}" class="post post__container centre" data-behavior="post" data-trueness="{{ post.trueness }}">
+	<div class="post__header" data-reveal-transparent>
+    
+  	{% if user.is_staff %}
+			<span class="post__buttons">
+				<span class="button transparent" data-behavior="post-update" data-url="{% url 'post_update' pk=post.pk %}">Edit</span>
+				<span class="button transparent" data-behavior="post-delete" data-url="{% url 'post_delete' pk=post.pk %}">Delete</span>
+			</span>
+    {% endif %}
+    
+		<span class="post__publication-date">{{ post.publication_date_short }}</span>
+    
+  	{% if user.is_staff %}
+			<div class="trueness__outline transparent" data-url="{% url 'post_update' pk=post.pk %}" data-behavior="trueness-container">
+				<div class="trueness__option {% if post.trueness == 'A' %}trueness__option--active{% endif %}" data-behavior="trueness" data-value="A"></div>
+				<div class="trueness__option {% if post.trueness == 'B' %}trueness__option--active{% endif %}" data-behavior="trueness" data-value="B"></div>
+				<div class="trueness__option {% if post.trueness == 'C' %}trueness__option--active{% endif %}" data-behavior="trueness" data-value="C"></div>
+			</div>
+    {% endif %}
+    
+	</div>
+  
+	<div class="post__content markdown-scope" data-behavior="post-content">
+		{{ post.content|cipher|markdown|extra_markdown }}
+	</div>
+  
+</div>
