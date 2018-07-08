@@ -9,8 +9,7 @@
   	margin-bottom: vertical(6);
   }
   
-  &__header
-  {
+  &__header {
     @include centre;
   	width: 589px;
   	margin-bottom: vertical();
@@ -22,16 +21,14 @@
     @include font--secondary;
   }
 
-  &__content
-  {
+  &__content {
   	line-height: vertical();
   	font-size: 16px;
   	color: $text;
   	font-family: Helvetica, sans-serif;
   }
 
-  &__buttons
-  {
+  &__buttons {
   	left: 0px;
   	position: absolute;
   }
