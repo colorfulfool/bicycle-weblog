@@ -6,15 +6,15 @@
     
   	{% if user.is_staff %}
 			<span class="post__buttons">
-				<span class="button transparent" data-target="post-update" data-url="{% url 'post_update' pk=post.pk %}">Edit</span>
-				<span class="button transparent" data-target="post-delete" data-url="{% url 'post_delete' pk=post.pk %}">Delete</span>
+				<span class="button transparent" data-target="post.update" data-url="{% url 'post_update' pk=post.pk %}">Edit</span>
+				<span class="button transparent" data-target="post.delete" data-url="{% url 'post_delete' pk=post.pk %}">Delete</span>
 			</span>
     {% endif %}
     
 		<span class="post__publication-date">{{ post.publication_date_short }}</span>
     
   	{% if user.is_staff %}
-			<div class="trueness__outline transparent" data-url="{% url 'post_update' pk=post.pk %}" data-target="trueness-container">
+			<div class="trueness__outline transparent" data-url="{% url 'post_update' pk=post.pk %}" data-target="trueness.container">
 				<div class="trueness__option {% if post.trueness == 'A' %}trueness__option--active{% endif %}" data-target="trueness" data-value="A"></div>
 				<div class="trueness__option {% if post.trueness == 'B' %}trueness__option--active{% endif %}" data-target="trueness" data-value="B"></div>
 				<div class="trueness__option {% if post.trueness == 'C' %}trueness__option--active{% endif %}" data-target="trueness" data-value="C"></div>
@@ -23,7 +23,7 @@
     
 	</div>
   
-	<div class="post__content markdown-scope" data-target="post-content">
+	<div class="post__content markdown-scope" data-target="post.content">
 		{{ post.content|cipher|markdown|extra_markdown }}
 	</div>
   

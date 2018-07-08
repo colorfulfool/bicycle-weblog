@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$(submitButton).click(function () {
 		$.ajax($(submitButton).attr('data-url'), {
 			type: 'POST',
-			data: { content: $('[data-target="post-content"]').val() },
+			data: { content: $('[data-target="post.content"]').val() },
 			success: function (response) {
         submitButton.dispatchEvent( new CustomEvent('request:success') )
   			$('.post').fadeOut(200)

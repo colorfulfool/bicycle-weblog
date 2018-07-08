@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('[data-target="post-list"]').on('click', '[data-target="post-delete"]', function () {
+	$('[data-target="post.list"]').on('click', '[data-target="post.delete"]', function () {
 		self = $(this);
 		$.ajax($(this).attr('data-url'), {
 			type: 'POST',
@@ -9,16 +9,16 @@ $(document).ready(function () {
 		});
 	});
   
-	$('[data-target="post-list"]').on('click', '[data-target="post-update"]', function () {
+	$('[data-target="post.list"]').on('click', '[data-target="post.update"]', function () {
 		self = $(this);
 		if (self.hasClass('button--active'))
 		{
 			$.ajax($(this).attr('data-url'), {
 				type: 'POST',
-				data: { content: toMarkdown(self.parents('[data-target="post"]').find('[data-target="post-content"]').html()) },
+				data: { content: toMarkdown(self.parents('[data-target="post"]').find('[data-target="post.content"]').html()) },
 				success: function (response) {
 					self.removeClass('button--active');
-					self.parents('[data-target="post"]').find('[data-target="post-content"]').removeAttr('contenteditable');
+					self.parents('[data-target="post"]').find('[data-target="post.content"]').removeAttr('contenteditable');
 				}
 			});
 
@@ -26,7 +26,7 @@ $(document).ready(function () {
 		else
 		{
 			self.addClass('button--active');
-			self.parents('[data-target="post"]').find('[data-target="post-content"]').attr('contenteditable','true');
+			self.parents('[data-target="post"]').find('[data-target="post.content"]').attr('contenteditable','true');
 		}
 
 	});

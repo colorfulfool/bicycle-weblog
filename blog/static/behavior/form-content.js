@@ -10,5 +10,5 @@ $(document).ready(function () {
 		})
 	})
   
-	document.querySelector('[data-target="post-content"]').focus()
+	document.querySelector('[data-target="post.content"]').focus()
 })

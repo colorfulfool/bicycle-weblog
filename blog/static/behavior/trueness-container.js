@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 	$('body').on('click', '[data-target="trueness"]', function () {
 		trueness = $(this);
-    truenessContainer = trueness.parents('[data-target="trueness-container"]');
+    truenessContainer = trueness.parents('[data-target="trueness.container"]');
     
 		$.ajax(truenessContainer.attr('data-url'), {
 			type: 'POST',
