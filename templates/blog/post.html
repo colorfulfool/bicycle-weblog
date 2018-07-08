@@ -2,7 +2,7 @@
 {% load custom_tags %}
 
 <div id="post{{ post.id }}" class="post post__container centre" data-target="post" data-trueness="{{ post.trueness }}">
-	<div class="post__header" data-reveal-concealed>
+	<div class="post__header" data-reveal-concealed-on-hover>
     
   	{% if user.is_staff %}
 			<span class="post__buttons">
