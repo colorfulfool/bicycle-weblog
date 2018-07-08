@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('[data-target="post.list"]').on('click', '[data-target="post.delete"]', function () {
+	$('body').on('click', '[data-target="post.delete"]', function () {
 		self = $(this);
 		$.ajax($(this).attr('data-url'), {
 			type: 'POST',
@@ -9,7 +9,7 @@ $(document).ready(function () {
 		});
 	});
   
-	$('[data-target="post.list"]').on('click', '[data-target="post.update"]', function () {
+	$('body').on('click', '[data-target="post.update"]', function () {
 		self = $(this);
 		if (self.hasClass('button--active'))
 		{
