@@ -1,8 +1,7 @@
 @import "vertical";
 @import "variables";
 
-.empty-area
-{
+.post-form__content {
 	margin-top: vertical(3);
 	margin-bottom: vertical(1);
 	min-height: vertical(9);
@@ -16,14 +15,7 @@
   background-color: $background;
 }
 
-.post-form .buttons
-{
-	width: 81px;
-	text-align: center;
-}
-
-.post-form .button
-{
-	margin-bottom: 10px;
-	display: inline-block;
+.post-form__buttons {
+  display: inline-block;
+  padding-bottom: 10px;
 }
