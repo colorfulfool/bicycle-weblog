@@ -1,10 +1,10 @@
 $(document).ready(function () {
-  submitButton = document.querySelector('[data-target="submit"]')
+  submitButton = document.querySelector('[data-target="form.submit"]')
   
 	$(submitButton).click(function () {
 		$.ajax($(submitButton).attr('data-url'), {
 			type: 'POST',
-			data: { content: $('[data-target="post.content"]').val() },
+			data: { content: $('[data-target="form.content"]').val() },
 			success: function (response) {
         submitButton.dispatchEvent( new CustomEvent('request:success') )
   			$('.post').fadeOut(200)

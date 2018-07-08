@@ -7,9 +7,9 @@
 </head>
 <body>
 	<div class="post post__container" data-trueness="A">
-		<textarea class="form__content post__content" data-target="post.content" data-backup="value"></textarea>
+		<textarea class="form__content post__content" data-target="form.content" data-backup="value"></textarea>
 		<div class="form__buttons">
-			<div class="form__button button" data-target="submit" data-url="{% url 'post_create' %}" data-backup-purge-on="request:success">Submit</div>
+			<div class="button" data-target="form.submit" data-url="{% url 'post_create' %}" data-backup-purge-on="request:success">Submit</div>
 		</div>
 	</div>
 </body>
