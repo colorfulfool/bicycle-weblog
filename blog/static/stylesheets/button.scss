@@ -6,7 +6,7 @@ $button-color: $fill;
   transition: opacity 0.2s linear;
 }
 
-.transparent:not(.button--active) {
+.concealed:not(.button--active) {
   opacity: 0;
 }
 
