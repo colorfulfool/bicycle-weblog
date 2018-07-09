@@ -1,7 +1,8 @@
-import Controller from "application_stimulus"
+import Controller from "../application_stimulus"
+import { post } from "../application_extensions"
 
-import backup from "local-storage"
-import stretch from "stretch"
+import backup from "../behavior/local-storage"
+import stretch from "../behavior/stretch"
 
 export default class extends Controller {
   static targets = [ "content" ]
@@ -14,7 +15,7 @@ export default class extends Controller {
   }
   
   submit() {
-    post(this.submitPath, {content: contentTarget.value}).then(() => {
+    post(this.submitPath, {content: this.contentTarget.value}).then(() => {
       backup.purge()
       this.closeWindow()
     })
@@ -23,5 +24,9 @@ export default class extends Controller {
   closeWindow() {
     window.close()
     window.opener.location.reload()
+  }
+  
+  get submitPath() {
+    return this.data.get("submit-url")
   }
 }

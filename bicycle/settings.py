@@ -43,7 +43,8 @@ INSTALLED_APPS = (
     'endless_pagination',
     'jquery',
     'compressor',
-    'raven.contrib.django.raven_compat',
+    'compressor_toolkit',
+    'django_extensions',
     'blog',
 )
 
@@ -121,7 +122,10 @@ STATICFILES_FINDERS = (
 
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
+    ('module', 'compressor_toolkit.precompilers.ES6Compiler'),
 )
+
+COMPRESS_ES6_COMPILER_CMD = 'export NODE_PATH="{paths}" && {browserify_bin} "{infile}" -o "{outfile}" -t [ "{node_modules}/babelify" ]'
 
 
 SITE_ID = 1

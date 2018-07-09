@@ -5,9 +5,9 @@
 	<div class="post__header" data-reveal-concealed>
     
   	{% if user.is_staff %}
-			<span class="post__buttons concealed">
-				<span class="button" data-action="post#edit" data-target="post.edit">Edit</span>
-				<span class="button" data-action="post#delete">Delete</span>
+			<span class="post__buttons">
+				<span class="button concealed" data-action="click->post#edit" data-target="post.edit">Edit</span>
+				<span class="button concealed" data-action="click->post#delete">Delete</span>
 			</span>
     {% endif %}
     
@@ -15,9 +15,9 @@
     
   	{% if user.is_staff %}
 			<div class="trueness__outline concealed">
-				<div class="trueness__option {% if post.trueness == 'A' %}trueness__option--active{% endif %}" data-action="post#trueness" data-value="A" data-target="post.trueness"></div>
-				<div class="trueness__option {% if post.trueness == 'B' %}trueness__option--active{% endif %}" data-action="post#trueness" data-value="B" data-target="post.trueness"></div>
-				<div class="trueness__option {% if post.trueness == 'C' %}trueness__option--active{% endif %}" data-action="post#trueness" data-value="C" data-target="post.trueness"></div>
+				<div class="trueness__option {% if post.trueness == 'A' %}trueness__option--active{% endif %}" data-action="click->post#trueness" data-value="A" data-target="post.trueness"></div>
+				<div class="trueness__option {% if post.trueness == 'B' %}trueness__option--active{% endif %}" data-action="click->post#trueness" data-value="B" data-target="post.trueness"></div>
+				<div class="trueness__option {% if post.trueness == 'C' %}trueness__option--active{% endif %}" data-action="click->post#trueness" data-value="C" data-target="post.trueness"></div>
 			</div>
     {% endif %}
     

@@ -34,7 +34,7 @@ class Post(models.Model):
 			return re.split(r'[?.!:]', self.content, flags=re.UNICODE)[0]
 
 	def __unicode__(self):
-		return self.excerpt()
+		return (self.excerpt() or "Fuck!")
     
 	def get_absolute_url(self):
 		return "/#post%s" % (self.id,)

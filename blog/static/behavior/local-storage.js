@@ -6,7 +6,7 @@ export default {
 		element.addEventListener('input', function (event) {
 			saveToLocalStorage(element.id, element[property])
 		})
-  }
+  },
   
   purge() {
     purgeLocalStorage()

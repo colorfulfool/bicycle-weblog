@@ -1,0 +1,27 @@
+{
+  "name": "bicycle-weblog",
+  "version": "1.0.0",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.0.0-beta.52",
+    "@babel/preset-stage-2": "^7.0.0-beta.52",
+    "babelify": "^9.0.0",
+    "browserify": "^16.2.2",
+    "stimulus": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      [
+        "@babel/preset-stage-2",
+        {
+          "decoratorsLegacy": true
+        }
+      ]
+    ]
+  }
+}

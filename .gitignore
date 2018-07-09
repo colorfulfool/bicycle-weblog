@@ -4,3 +4,4 @@ venv
 *.pyc
 staticfiles
 .sass-cache/*
+node_modules/*

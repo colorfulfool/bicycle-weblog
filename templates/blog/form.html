@@ -6,10 +6,10 @@
   <title>Writing — {% current_blog %}</title>
 </head>
 <body>
-	<div class="post post__container" data-trueness="A" data-controller="form">
+	<div class="post post__container" data-trueness="A" data-controller="form" data-form-submit-url="{% url 'post_create' %}">
 		<textarea class="form__content post__content" data-target="form.content"></textarea>
 		<div class="form__buttons">
-			<div class="button" data-action="form#submit" data-url="{% url 'post_create' %}">Submit</div>
+			<div class="button" data-action="click->form#submit">Submit</div>
 		</div>
 	</div>
 </body>

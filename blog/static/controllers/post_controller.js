@@ -1,13 +1,14 @@
-import Controller from "application_stimulus"
+import Controller from "../application_stimulus"
+import { post } from "../application_extensions"
 
-import toMarkdown from "to-markdown"
+import { toMarkdown } from "to-markdown"
 
 export default class extends Controller {
   static targets = [ "content", "edit", "trueness" ]
   
   delete() {
-    post(this.data.deletePath).then(() =>
-      this.element.hide(200))
+    post(this.data.get("deleteUrl")).then(() =>
+      this.element.remove())
   }
   
   edit() {
@@ -18,14 +19,7 @@ export default class extends Controller {
   }
   
   trueness(event) {
-    value = event.target.getAttribute("data-value")
-    
-    post(this.data.updatePath, {trueness: value}).then(() => {
-      this.element.setAttribute("data-trueness", value)
-    
-      truenessTargets.forEach((target) => target.classList.remove("trueness__option--active"))
-      event.target.classList.add("trueness__option--active")      
-    })
+    this.truenessOptionSelected(event.target)
   }
   
   
@@ -35,9 +29,22 @@ export default class extends Controller {
   }
   
   finishEdit() {
-    post(this.data.updatePath, {content: this.markdownContent}).then(() => {
+    post(this.data.get("updateUrl"), {content: this.markdownContent}).then(() => {
       this.editTarget.classList.remove("button--active")
       this.contentTarget.removeAttribute("contenteditable")
+    })
+  }
+  
+  
+  truenessOptionSelected(truenessOption) {
+    var value = truenessOption.getAttribute("data-value")
+    
+    post(this.data.get("updateUrl"), {trueness: value}).then(() => {
+      this.element.setAttribute("data-trueness", value)
+    
+      this.truenessTargets.forEach((target) => 
+        target.classList.remove("trueness__option--active"))
+      truenessOption.classList.add("trueness__option--active") 
     })
   }
   
