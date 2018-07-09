@@ -1,4 +1,5 @@
 export default {
+  
   connect(element, property) {
 		element[property] = fetchFromLocalStorage(element.id)
     element.dispatchEvent( new CustomEvent('input') )
@@ -11,8 +12,8 @@ export default {
   purge() {
     purgeLocalStorage()
   }
+  
 }
-
 
 
 function saveToLocalStorage(key, value) {

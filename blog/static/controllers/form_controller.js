@@ -1,8 +1,8 @@
 import Controller from "../application_stimulus"
 import { post } from "../application_extensions"
 
-import backup from "../behavior/local-storage"
-import stretch from "../behavior/stretch"
+import backup from "../sprinkles/local-storage"
+import stretch from "../sprinkles/stretch"
 
 export default class extends Controller {
   static targets = [ "content" ]
