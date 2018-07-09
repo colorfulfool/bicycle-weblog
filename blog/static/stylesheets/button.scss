@@ -2,7 +2,7 @@
 
 $button-color: $fill;
 
-.button, .plus-button {
+.concealed, .button, .plus-button, .post__buttons {
   transition: opacity 0.2s linear;
 }
 
