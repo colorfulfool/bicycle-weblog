@@ -8,6 +8,4 @@ $(document).ready(function () {
 		  textarea.style.height = Math.max(textarea.scrollHeight, minHeight) + "px";
 		})
 	})
-  
-	document.querySelector('[data-target="form.content"]').focus()
 })

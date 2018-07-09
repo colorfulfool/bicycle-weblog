@@ -14,4 +14,7 @@ $(document).ready(function () {
 			}
 		});
 	});
+  
+  
+	document.querySelector('[data-target="form.content"]').focus()
 });
