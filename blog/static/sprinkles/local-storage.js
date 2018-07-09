@@ -1,6 +1,6 @@
 export default {
   
-  connect(element, property) {
+  enable(element, property) {
 		element[property] = fetchFromLocalStorage(element.id)
     element.dispatchEvent( new CustomEvent('input') )
 

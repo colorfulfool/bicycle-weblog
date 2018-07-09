@@ -8,8 +8,8 @@ export default class extends Controller {
   static targets = [ "content" ]
   
   connect() {
-    backup.connect(this.contentTarget, "value")
-    stretch.connect(this.contentTarget, 243)
+    backup.enable(this.contentTarget, "value")
+    stretch.enable(this.contentTarget, 243)
     
     this.contentTarget.focus()
   }
