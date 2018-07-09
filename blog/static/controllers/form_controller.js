@@ -1,4 +1,4 @@
-import { Controller } from "stimulus"
+import Controller from "application_stimulus"
 
 import backup from "local-storage"
 import stretch from "stretch"
@@ -14,7 +14,7 @@ export default class extends Controller {
   }
   
   submit() {
-    fetch(this.submitPath, {content: contentTarget.value}).then(() => {
+    post(this.submitPath, {content: contentTarget.value}).then(() => {
       backup.purge()
       this.closeWindow()
     })
