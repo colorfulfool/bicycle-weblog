@@ -6,10 +6,10 @@
   <title>Writing — {% current_blog %}</title>
 </head>
 <body>
-	<div class="post post__container" data-trueness="A">
-		<textarea class="form__content post__content" data-target="form.content" data-backup="value" data-stretch-from="243"></textarea>
+	<div class="post post__container" data-trueness="A" data-controller="form">
+		<textarea class="form__content post__content" data-target="form.content"></textarea>
 		<div class="form__buttons">
-			<div class="button" data-target="form.submit" data-url="{% url 'post_create' %}" data-backup-purge-on="request:success">Submit</div>
+			<div class="button" data-action="form#submit" data-url="{% url 'post_create' %}">Submit</div>
 		</div>
 	</div>
 </body>

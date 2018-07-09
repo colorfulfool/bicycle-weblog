@@ -1,23 +1,23 @@
 {% load markdown_deux_tags %}
 {% load custom_tags %}
 
-<div id="post{{ post.id }}" class="post post__container centre" data-target="post" data-trueness="{{ post.trueness }}">
+<div id="post{{ post.id }}" class="post post__container centre" data-trueness="{{ post.trueness }}" data-controller="post" data-post-update-url="{% url 'post_update' pk=post.pk %}" data-post-delete-url="{% url 'post_delete' pk=post.pk %}">
 	<div class="post__header" data-reveal-concealed>
     
   	{% if user.is_staff %}
-			<span class="post__buttons">
-				<span class="button concealed" data-target="post.update" data-url="{% url 'post_update' pk=post.pk %}">Edit</span>
-				<span class="button concealed" data-target="post.delete" data-url="{% url 'post_delete' pk=post.pk %}">Delete</span>
+			<span class="post__buttons concealed">
+				<span class="button" data-action="post#edit" data-target="post.edit">Edit</span>
+				<span class="button" data-action="post#delete">Delete</span>
 			</span>
     {% endif %}
     
 		<span class="post__publication-date">{{ post.publication_date_short }}</span>
     
   	{% if user.is_staff %}
-			<div class="trueness__outline concealed" data-url="{% url 'post_update' pk=post.pk %}" data-target="trueness.container">
-				<div class="trueness__option {% if post.trueness == 'A' %}trueness__option--active{% endif %}" data-target="trueness" data-value="A"></div>
-				<div class="trueness__option {% if post.trueness == 'B' %}trueness__option--active{% endif %}" data-target="trueness" data-value="B"></div>
-				<div class="trueness__option {% if post.trueness == 'C' %}trueness__option--active{% endif %}" data-target="trueness" data-value="C"></div>
+			<div class="trueness__outline concealed">
+				<div class="trueness__option {% if post.trueness == 'A' %}trueness__option--active{% endif %}" data-action="post#trueness" data-value="A" data-target="post.trueness"></div>
+				<div class="trueness__option {% if post.trueness == 'B' %}trueness__option--active{% endif %}" data-action="post#trueness" data-value="B" data-target="post.trueness"></div>
+				<div class="trueness__option {% if post.trueness == 'C' %}trueness__option--active{% endif %}" data-action="post#trueness" data-value="C" data-target="post.trueness"></div>
 			</div>
     {% endif %}
     
