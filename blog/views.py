@@ -29,6 +29,8 @@ class PostCreate(CreateView):
 			return HttpResponseRedirect(self.login_path(next=request.path))
 		return super(PostCreate, self).dispatch(request, *args, **kwargs)
 		
+    
+	template_name = "blog/form.html"
   
 	def get(self, *args, **kwargs):
 		self.object = None
