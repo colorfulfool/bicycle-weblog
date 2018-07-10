@@ -1,4 +1,4 @@
-Django==1.7
+Django==1.8
 dj-database-url
 dj-static
 django-toolbelt
@@ -14,7 +14,7 @@ html2text
 langdetect
 babel
 django-jquery
-django_compressor
+django_compressor==2.2
 django-compressor-toolkit
 django-libsass
 django-extensions
