@@ -5,8 +5,11 @@
     "@babel/core": "^7.0.0-beta.52",
     "@babel/preset-env": "^7.0.0-beta.52",
     "@babel/preset-stage-2": "^7.0.0-beta.52",
+    "autoprefixer": "^8.6.5",
     "babelify": "^9.0.0",
     "browserify": "^16.2.2",
+    "node-sass": "^4.9.2",
+    "postcss-cli": "^5.0.1",
     "stimulus": "^1.0.1"
   },
   "devDependencies": {},
