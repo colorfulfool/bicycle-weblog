@@ -132,6 +132,18 @@ COMPRESS_ES6_COMPILER_CMD = 'export NODE_PATH="{paths}" && {browserify_bin} "{in
 
 SITE_ID = 1
 
-RAVEN_CONFIG = {
-    'dsn': 'https://c7ff61934753425f8d249f228a625830:d8d741cfdea3408196a8a5fc185486c5@app.getsentry.com/31802',
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'ERROR'),
+        },
+    },
 }
