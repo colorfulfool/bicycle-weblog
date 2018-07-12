@@ -1,5 +1,5 @@
 import Controller from "../application_stimulus"
-import { post } from "../application_extensions"
+import { Endpoint } from "../application_extensions"
 
 import { toMarkdown } from "to-markdown"
 
@@ -7,7 +7,7 @@ export default class extends Controller {
   static targets = [ "content", "edit", "trueness" ]
   
   delete() {
-    post(this.deleteUrl).then(() =>
+    this.deleteView.post().then(() =>
       this.element.remove())
   }
   
@@ -29,7 +29,7 @@ export default class extends Controller {
   }
   
   finishEdit() {
-    post(this.updateUrl, {content: this.markdownContent}).then(() => {
+    this.updateView.post({content: this.markdownContent}).then(() => {
       this.editTarget.classList.remove("button--active")
       this.contentTarget.removeAttribute("contenteditable")
     })
@@ -39,7 +39,7 @@ export default class extends Controller {
   truenessOptionSelected(truenessOption) {
     var value = truenessOption.getAttribute("data-value")
     
-    post(this.updateUrl, {trueness: value}).then(() => {
+    this.updateView.post({trueness: value}).then(() => {
       this.element.setAttribute("data-trueness", value)
     
       this.truenessTargets.forEach((target) => 
@@ -58,11 +58,11 @@ export default class extends Controller {
   }
   
   
-  get updateUrl() {
-    return this.data.get("update-url")
+  get updateView() {
+    return new Endpoint(this.data.get("update-url"))
   }
   
-  get deleteUrl() {
-    return this.data.get("delete-url")
+  get deleteView() {
+    return new Endpoint(this.data.get("delete-url"))
   }
 }

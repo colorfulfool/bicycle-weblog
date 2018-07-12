@@ -1,5 +1,5 @@
 import Controller from "../application_stimulus"
-import { post } from "../application_extensions"
+import { Endoint } from "../application_extensions"
 
 import backup from "../sprinkles/local-storage"
 import stretch from "../sprinkles/stretch"
@@ -15,7 +15,7 @@ export default class extends Controller {
   }
   
   submit() {
-    post(this.submitPath, {content: this.contentTarget.value}).then(() => {
+    this.view.post({content: this.contentTarget.value}).then(() => {
       backup.purge()
       this.closeWindow()
     })
@@ -26,7 +26,7 @@ export default class extends Controller {
     window.opener.location.reload()
   }
   
-  get submitPath() {
-    return this.data.get("submit-url")
+  get view() {
+    return new Endpoint(this.data.get("submit-url"))
   }
 }
