@@ -7,7 +7,7 @@ export default class extends Controller {
   static targets = [ "content", "edit", "trueness" ]
   
   delete() {
-    post(this.data.get("deleteUrl")).then(() =>
+    post(this.deleteUrl).then(() =>
       this.element.remove())
   }
   
@@ -29,7 +29,7 @@ export default class extends Controller {
   }
   
   finishEdit() {
-    post(this.data.get("updateUrl"), {content: this.markdownContent}).then(() => {
+    post(this.updateUrl, {content: this.markdownContent}).then(() => {
       this.editTarget.classList.remove("button--active")
       this.contentTarget.removeAttribute("contenteditable")
     })
@@ -39,7 +39,7 @@ export default class extends Controller {
   truenessOptionSelected(truenessOption) {
     var value = truenessOption.getAttribute("data-value")
     
-    post(this.data.get("updateUrl"), {trueness: value}).then(() => {
+    post(this.updateUrl, {trueness: value}).then(() => {
       this.element.setAttribute("data-trueness", value)
     
       this.truenessTargets.forEach((target) => 
@@ -55,5 +55,14 @@ export default class extends Controller {
   
   get isEditing() {
     return this.editTarget.classList.contains("button--active")
+  }
+  
+  
+  get updateUrl() {
+    return this.data.get("update-url")
+  }
+  
+  get deleteUrl() {
+    return this.data.get("delete-url")
   }
 }
