@@ -14,11 +14,3 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-
-@mixin button-base {
-	font-size: $button;
-	border-radius: 5px;
-	margin-right: 5px;
-	z-index: 10;
-	line-height: 22px;
-}

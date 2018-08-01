@@ -1,7 +1,5 @@
 @import "variables";
 
-$button-color: $fill;
-
 .concealed, .button, .plus-button {
   transition: opacity 0.2s linear;
 }
@@ -10,7 +8,16 @@ $button-color: $fill;
   opacity: 0;
 }
 
-@import "mixins";
+
+@mixin button-base {
+	font-size: $button;
+	border-radius: 5px;
+	margin-right: 5px;
+	z-index: 10;
+	line-height: 22px;
+}
+
+$button-color: $fill;
 
 .button {
   @include button-base;
