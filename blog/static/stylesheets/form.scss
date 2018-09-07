@@ -1,21 +1,24 @@
 @import "vertical";
 @import "variables";
 
-.form__content {
-	margin-top: vertical(3);
-	margin-bottom: vertical(1);
-	min-height: vertical(9);
+.form {
+  &__content {
+  	margin-top: vertical(3);
+  	margin-bottom: vertical(1);
+  	min-height: vertical(9);
 
-	width: 100%;
+  	width: 100%;
 
-	outline: none;
-  border: none;
-  resize: none;
+  	outline: none;
+    border: none;
+    resize: none;
   
-  background-color: $background;
+    background-color: $background;
+  }
+
+  &__buttons {
+    display: inline-block;
+    padding-bottom: 10px;
+  }  
 }
 
-.form__buttons {
-  display: inline-block;
-  padding-bottom: 10px;
-}
