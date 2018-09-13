@@ -1,12 +1,12 @@
 function typeHeading(text, delay) {
 	var i = 0
-	var timer = setInterval(function () { $('.blog-title').append(text[i++]) }, delay)
+	var timer = setInterval(function () { $('[data-target="blog.heading"]').append(text[i++]) }, delay)
 }
 
 $(function () {
 	var img = new Image();
 	// img.onload = function() {
-	// 	$('.blog-title').html('&#x200b;')
+	// 	$('[data-target="blog.heading"]').html('&#x200b;')
 	// 	typeHeading('Bicycle for the mind', 100)
 	// 	setTimeout(function () {
 	// 		typeHeading(' как ты?', 100)

@@ -2,7 +2,7 @@
 @import "vertical";
 @import "variables";
 
-.blog-title
+.blog__title
 {
   @include centre;
 	width: 648px;
@@ -40,10 +40,11 @@ header
 	margin-bottom: vertical(4);
 }
 
-.blog-subtitle
+.blog__subtitle
 {
+  @include centre;
+  text-align: center;
 	color: $lightfill;
-	margin-top: vertical(2);
-	text-align: center;
+	margin-top: vertical(1);
 	letter-spacing: 2px;
 }
