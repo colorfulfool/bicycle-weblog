@@ -1,5 +1,5 @@
 import Controller from "../application_stimulus"
-import { Endoint } from "../application_extensions"
+import { Endpoint } from "../application_extensions"
 
 import backup from "../sprinkles/local-storage"
 import stretch from "../sprinkles/stretch"
