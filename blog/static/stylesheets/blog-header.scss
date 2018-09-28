@@ -47,4 +47,7 @@ header
 	color: $lightfill;
 	margin-top: vertical(1);
 	letter-spacing: 2px;
+  
+	text-transform: lowercase;
+  font-variant: small-caps;
 }
