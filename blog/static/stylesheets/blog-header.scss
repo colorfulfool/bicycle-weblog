@@ -32,6 +32,10 @@
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   }
+  
+  &.small { 
+    transform: scale(0.4);
+  }
 }
 
 header
