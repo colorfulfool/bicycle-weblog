@@ -7,8 +7,14 @@
 </head>
 <body>
 <header>
-	{% include "blog/title.html" %}
-  <span class="blog__subtitle">Write-only, do not read. You've been warned</span>
+	<div>
+		{% include "blog/title.html" %}
+		<div class="blog__subtitle">
+			<div>Write-only</div> 
+			<div>do not read</div> 
+			<div>You've been warned</div>
+		</div>
+	</div>
 </header>
 {% block content %}
 {% endblock %}

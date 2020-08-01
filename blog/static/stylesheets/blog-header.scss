@@ -53,5 +53,8 @@ header
 	letter-spacing: 2px;
   
 	text-transform: lowercase;
-  font-variant: small-caps;
+	font-variant: small-caps;
+	
+	display: flex;
+	justify-content: space-between;
 }
