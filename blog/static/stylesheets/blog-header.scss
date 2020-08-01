@@ -42,14 +42,20 @@ header
 {
 	margin-top: vertical(2);
 	margin-bottom: vertical(4);
+
+	display: flex;
+	> div {
+		display: inline-block;
+		margin: auto;
+	}
 }
 
 .blog__subtitle
 {
-  @include centre;
+	width: 100%;
+
   text-align: center;
 	color: $lightfill;
-	margin-top: vertical(1);
 	letter-spacing: 2px;
   
 	text-transform: lowercase;
@@ -57,4 +63,10 @@ header
 	
 	display: flex;
 	justify-content: space-between;
+
+	> div {
+		min-width: 20ch;
+		&:first-child { text-align: left; }
+		&:last-child { text-align: right; }
+	}
 }
