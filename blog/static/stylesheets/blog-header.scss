@@ -64,9 +64,12 @@ header
 	justify-content: space-between;
 	align-items: center;
 
+	color: $lightfill;
+	font-weight: bold;
+
 	.line {
 		flex-grow: 1;
-		border-bottom: 1px solid black;
+		border-bottom: 2px solid $lightfill;
 		height: 1px;
 		margin: 0px 1ch;
 	}
