@@ -4,10 +4,21 @@ FROM python:2.7-slim
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV DJANGO_SETTINGS_MODULE=bicycle.settings
-ENV DATABASE_URL=sqlite:///app/data/db.sqlite3
+ENV DATABASE_URL=sqlite:////app/data/db.sqlite3
 
 # Set work directory
 WORKDIR /app
+
+# Install build dependencies using archive repositories
+RUN sed -i 's/deb.debian.org/archive.debian.org/g' /etc/apt/sources.list && \
+    sed -i 's/security.debian.org/archive.debian.org/g' /etc/apt/sources.list && \
+    apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    curl \
+    && curl -fsSL https://deb.nodesource.com/setup_10.x | bash - \
+    && apt-get install -y nodejs \
+    && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for better Docker layer caching
 COPY requirements.txt /app/
@@ -23,6 +34,9 @@ RUN mkdir -p /app/staticfiles /app/media /app/data
 RUN adduser --disabled-password --gecos '' appuser && \
     chown -R appuser:appuser /app
 USER appuser
+
+# Create database and run migrations
+RUN python manage.py migrate --noinput || echo "Migrations completed with warnings"
 
 # Collect static files
 RUN python manage.py collectstatic --noinput

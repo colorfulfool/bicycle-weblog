@@ -11,11 +11,17 @@ register = template.Library()
 
 @register.simple_tag
 def current_blog():
-	return Site.objects.get_current().blog.title
+	try:
+		return Site.objects.get_current().blog.title
+	except:
+		return "Bicycle Weblog"
 
 @register.filter
 def cipher(text):
-	if not Site.objects.get_current().blog.enable_cipher:
+	try:
+		if not Site.objects.get_current().blog.enable_cipher:
+			return text
+	except:
 		return text
 
 	def swap(letter):
