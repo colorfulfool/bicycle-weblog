@@ -1,9 +1,7 @@
 Django==1.8
 dj-database-url
 dj-static
-django-toolbelt
 gunicorn
-psycopg2
 static3
 wsgiref
 django-grappelli
