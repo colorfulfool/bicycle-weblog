@@ -1,7 +1,10 @@
 @import "mixins";
 @import "variables";
 
-$button-color: $fill;
+:root 
+{
+  --button-color: var(--fill);
+}
 
 .trueness {
   &__outline {
@@ -10,7 +13,7 @@ $button-color: $fill;
   	right: 0px;
   	position: absolute;
   	padding: 2px;
-  	border: 1px solid $button-color;
+  	border: 1px solid var(--button-color);
   	cursor: default;
   	vertical-align: bottom;
   	margin-top: 2px;
@@ -22,16 +25,16 @@ $button-color: $fill;
   	float: left;
   	width: 10px;
   	height: 10px;
-  	border: 1px dashed $button-color;
+  	border: 1px dashed var(--button-color);
   	margin: 1px 2px;
   	border-radius: 30px;
   	padding: 1px;
   	cursor: pointer;
 
     &--active {
-    	background-color: $button-color;
-    	border: solid 1px $button-color;
-    	color: $background;
+    	background-color: var(--button-color);
+    	border: solid 1px var(--button-color);
+    	color: var(--background);
     }
   }
 }

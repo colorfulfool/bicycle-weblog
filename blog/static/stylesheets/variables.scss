@@ -1,19 +1,27 @@
-// colors
-$background: white;
-$foreground: rgb(40,40,40);
-$accent: rgb(120,120,120);
+:root {
+  // colors
+  --background: white;
+  --foreground: rgb(40,40,40);
+  --accent: rgb(120,120,120);
 
-// special colors
-$solid: rgb(6,6,6);
-$special-word: #5B5941;
+  // special colors
+  --solid: #08080a;
+  --special-word: #5B5941;
 
-// aliases
-$fill: $accent;
-$text: $foreground;
+  // aliases
+  --fill: var(--accent);
+  --text: var(--foreground);
 
-// inferred
-$lightfill: rgba($fill, 0.666);
+  // inferred
+  --lightfill: rgba(var(--fill), 0.666);
 
+  // font sizes
+  --button: 14px;
+}
 
-// font sizes
-$button: 14px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #181a1b;
+    --foreground: rgb(215,215,215);
+  }
+}

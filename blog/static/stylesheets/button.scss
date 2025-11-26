@@ -1,6 +1,8 @@
 @import "variables";
 
-$button-color: $fill;
+:root {
+  --button-color: var(--fill);
+}
 
 .concealed, .button, .plus-button {
   transition: opacity 0.2s linear;
@@ -14,14 +16,14 @@ $button-color: $fill;
 
 .button {
   @include button-base;
-	border: solid 1px $button-color;
-	color: $button-color;
+	border: solid 1px var(--button-color);
+	color: var(--button-color);
   cursor: pointer;
 	padding: 1px 10px;
 
   &--active {
-  	background-color: $button-color;
-  	border: solid 1px $button-color;
-  	color: $background;
+  	background-color: var(--button-color);
+  	border: solid 1px var(--button-color);
+  	color: var(--background);
   }
 }

@@ -19,8 +19,8 @@ body {
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
-  background-color: $background;
-  color: $text;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 p {
@@ -33,7 +33,7 @@ footer
 	height: vertical(2);
 	text-align: center;
 	padding-top: vertical(1);
-	background-image: linear-gradient(to right, $fill 60%, rgba($background,0) 0%);
+	background-image: linear-gradient(to right, var(--fill) 60%, rgba(var(--background),0) 0%);
 	background-position: top;
 	background-size: 30px 1px;
 	background-repeat: repeat-x;

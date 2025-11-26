@@ -16,8 +16,8 @@
 
   &.solid
   {
-  	color: $solid;
-  	border: $solid 10px solid;
+  	color: var(--solid);
+  	border: var(--solid) 10px solid;
   	padding: 5px 10px;
   }
 
@@ -42,7 +42,7 @@ header
 
 .blog-subtitle
 {
-	color: $lightfill;
+	color: var(--lightfill);
 	margin-top: vertical(2);
 	text-align: center;
 	letter-spacing: 2px;

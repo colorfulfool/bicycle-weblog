@@ -12,7 +12,7 @@
   border: none;
   resize: none;
   
-  background-color: $background;
+  background-color: var(--background);
 }
 
 .form__buttons {
