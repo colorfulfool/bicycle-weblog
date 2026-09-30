@@ -11,6 +11,10 @@ DATABASES = {
 
 WSGI_APPLICATION = None
 
+# Production precompresses at image build time (COMPRESS_OFFLINE=True in
+# settings.py); local dev compiles on the fly instead.
+COMPRESS_OFFLINE = False
+
 # Local dev on Apple Silicon: node-sass (via compressor_toolkit) has no
 # arm64/node>=15 binary, so compile SCSS with python libsass instead.
 # Production (Docker) still uses compressor_toolkit + node-sass via settings.py.

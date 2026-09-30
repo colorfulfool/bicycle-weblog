@@ -127,6 +127,12 @@ COMPRESS_PRECOMPILERS = (
 
 COMPRESS_ES6_COMPILER_CMD = 'export NODE_PATH="{paths}" && {browserify_bin} "{infile}" -o "{outfile}" -t [ "{node_modules}/babelify" ]'
 
+# Precompressed at image build time (`manage.py compress`). The worker never
+# compiles at request time, so must not render stale output if the
+# persistent staticfiles volume holds assets from a previous deploy.
+# (Local dev overrides this back to False in local_settings.py.)
+COMPRESS_OFFLINE = True
+
 
 SITE_ID = 1
 

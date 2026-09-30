@@ -49,11 +49,17 @@ RUN python manage.py migrate --noinput || echo "Migrations completed with warnin
 # Collect static files
 RUN python manage.py collectstatic --noinput
 
+# Precompress CSS/JS bundles + offline manifest so the worker never compiles
+# at request time (COMPRESS_OFFLINE=True in bicycle/settings.py).
+# Assets only ever change together with the image, so they live in the image:
+# no staticfiles volume (it would shadow fresh files with stale ones).
+RUN python manage.py compress --force
+
 # Expose port
 EXPOSE 8000
 
-# Define volumes for persistent data
-VOLUME ["/app/data", "/app/media", "/app/staticfiles"]
+# Define volumes for persistent data (uploads + database only)
+VOLUME ["/app/data", "/app/media"]
 
 # Health check using Python (urllib2: this image runs Python 2.7,
 # which has no urllib.request module)
