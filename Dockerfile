@@ -55,9 +55,10 @@ EXPOSE 8000
 # Define volumes for persistent data
 VOLUME ["/app/data", "/app/media", "/app/staticfiles"]
 
-# Health check using Python (no additional packages needed)
+# Health check using Python (urllib2: this image runs Python 2.7,
+# which has no urllib.request module)
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/').read()" || exit 1
+    CMD python -c "import urllib2; urllib2.urlopen('http://localhost:8000/').read()" || exit 1
 
 # Run the application
 CMD ["gunicorn", "bicycle.wsgi", "--bind", "0.0.0.0:8000", "--log-file", "-"]
