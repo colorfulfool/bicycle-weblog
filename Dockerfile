@@ -34,6 +34,7 @@ RUN npm ci
 
 # Copy project files
 COPY . /app/
+RUN chmod +x /app/entrypoint.sh
 
 # Create directories for database, media, and static files
 RUN mkdir -p /app/staticfiles /app/media /app/data
@@ -51,15 +52,19 @@ RUN python manage.py collectstatic --noinput
 
 # Precompress CSS/JS bundles + offline manifest so the worker never compiles
 # at request time (COMPRESS_OFFLINE=True in bicycle/settings.py).
-# Assets only ever change together with the image, so they live in the image:
-# no staticfiles volume (it would shadow fresh files with stale ones).
-RUN python manage.py compress --force
+# Stash a copy outside staticfiles: at runtime the persistent volume shadows
+# /app/staticfiles, and entrypoint.sh restores these into it on every boot.
+RUN python manage.py compress --force && \
+    mkdir -p /app/baked-static && \
+    cp -r /app/staticfiles/CACHE /app/baked-static/CACHE
 
 # Expose port
 EXPOSE 8000
 
-# Define volumes for persistent data (uploads + database only)
-VOLUME ["/app/data", "/app/media"]
+# Define volumes for persistent data. staticfiles stays a volume (e.g. for a
+# future reverse proxy serving assets); entrypoint.sh refreshes it from the
+# image on every boot so stale deploys can't shadow fresh code.
+VOLUME ["/app/data", "/app/media", "/app/staticfiles"]
 
 # Health check using Python (urllib2: this image runs Python 2.7,
 # which has no urllib.request module)
@@ -67,4 +72,5 @@ HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
     CMD python -c "import urllib2; urllib2.urlopen('http://localhost:8000/').read()" || exit 1
 
 # Run the application
+ENTRYPOINT ["/app/entrypoint.sh"]
 CMD ["gunicorn", "bicycle.wsgi", "--bind", "0.0.0.0:8000", "--log-file", "-"]
