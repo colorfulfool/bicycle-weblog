@@ -48,6 +48,12 @@ header
 		display: inline-block;
 		margin: auto;
 	}
+
+  @media screen and (max-width: 730px) {
+    margin-top: vertical(2);
+    margin-bottom: vertical(2);
+    transform: scale(calc(100vw/730px)) translateX(-50%);
+  }
 }
 
 .blog__subtitle

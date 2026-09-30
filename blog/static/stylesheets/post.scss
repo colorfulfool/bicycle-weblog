@@ -6,12 +6,14 @@
   &__container {
     @include centre;
   	width: 697px;
+    max-width: 100%;
   	margin-bottom: vertical(3);
   }
   
   &__header {
     @include centre;
   	width: 589px;
+    max-width: 100%;
   	margin-bottom: vertical();
   	text-align: center;
   	position: relative;
