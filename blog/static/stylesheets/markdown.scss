@@ -19,7 +19,7 @@
   
   
   .special-word {
-    color: $special-word;
+    color: var(--special-word);
     font-style: italic;
   }
 }

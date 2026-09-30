@@ -16,8 +16,8 @@
 
   &.solid
   {
-  	color: $solid;
-  	border: $solid 10px solid;
+  	color: var(--solid);
+  	border: var(--solid) 10px solid;
   	padding: 5px 10px;
   }
 
@@ -68,7 +68,7 @@ header
 
 	.line {
 		flex-grow: 1;
-		border-bottom: 2px solid black;
+		border-bottom: 2px solid var(--fill);
 		height: 1px;
 		margin: 0px 1ch;
 	}
