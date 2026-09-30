@@ -50,6 +50,10 @@ bicycle.sublime-project
 bicycle.sublime-workspace
 server.sh
 
+# node_modules are installed from scratch inside the image (npm ci);
+# the host's copy may contain binaries for the wrong OS/arch
+node_modules/
+
 # Database
 db.sqlite3
 
