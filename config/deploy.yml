@@ -1,0 +1,25 @@
+service: bicycleforthemind
+image: colorfulfool/bicycleforthemind
+
+servers:
+  web:
+    - 146.190.205.70
+
+proxy:
+  ssl: true
+  host: bicycle.forthemind.co.uk
+  app_port: 8000
+
+registry:
+  username: colorfulfool
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+builder:
+  arch: amd64
+
+volumes:
+  - "app_data:/app/data"
+  - "app_media:/app/media"
+
+asset_path: /app/staticfiles

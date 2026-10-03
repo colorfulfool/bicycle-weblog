@@ -50,9 +50,13 @@ header
 	}
 
   @media screen and (max-width: 730px) {
-    margin-top: vertical(2);
-    margin-bottom: vertical(2);
-    transform: scale(calc(100vw/730px)) translateX(-50%);
+    margin-top: vertical(3);
+    margin-bottom: vertical(3);
+
+    > div {
+      width: 688px;
+      zoom: calc((100vw - 32px) / 688px);
+    }
   }
 }
 
