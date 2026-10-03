@@ -3,7 +3,7 @@ image: colorfulfool/bicycleforthemind
 
 servers:
   web:
-    - 146.190.205.70
+    - 64.226.110.61
 
 proxy:
   ssl: true
