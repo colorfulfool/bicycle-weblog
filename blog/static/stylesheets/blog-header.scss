@@ -41,7 +41,6 @@
 header
 {
 	margin-top: vertical(4);
-	margin-bottom: vertical(4);
 
 	display: flex;
 	> div {
@@ -51,7 +50,6 @@ header
 
   @media screen and (max-width: 730px) {
     margin-top: vertical(3);
-    margin-bottom: vertical(3);
 
     > div {
       width: 688px;

@@ -1,16 +1,21 @@
 @import "constants";
+@import "vertical";
 
 .plus-button
 {
-	text-align: center;
-	/*width: 81px;*/
-	height: 0px;
-	font-size: 81px;
+  height: vertical(4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 	/*font-weight: bold;*/
 	/*border: dashed 1px;*/
 	border-radius: 40px;
 	position: relative;
-	bottom: 81px;
+	font-size: vertical(3);
 	cursor: pointer;
 	color: var(--lightfill);
+
+  @media screen and (max-width: 730px) {
+    height: vertical(3);
+  }
 }
